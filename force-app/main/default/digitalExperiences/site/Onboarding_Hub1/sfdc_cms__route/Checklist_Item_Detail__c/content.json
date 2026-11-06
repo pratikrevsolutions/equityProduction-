@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Checklist Item Detail",
+  "contentBody" : {
+    "activeViewId" : "Checklist_Item_Detail",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "detail-0dd",
+    "urlPrefix" : "checklistitem"
+  },
+  "urlName" : "checklistitem-detail"
+}

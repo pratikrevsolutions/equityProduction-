@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Phase 4: generates the onboarding tasks + regulatory checklist for the study and moves it to Study Awarded (EM_Onboarding_Start → EM_Onboarding_Items_Generate → EM_Onboarding_Recalc). Idempotent.</description>
+    <flowDefinition>EM_Onboarding_Start</flowDefinition>
+    <label>Start Onboarding</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

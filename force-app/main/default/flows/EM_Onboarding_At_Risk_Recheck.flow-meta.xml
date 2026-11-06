@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>F-09 companion (2026-10-08, Abbey&apos;s &quot;no due dates but still At Risk&quot;). Re-evaluates At Risk the moment a study&apos;s Onboarding Status or Status Override is changed by hand (e.g. set to Site Activated or Withdrawn / Cancelled), instead of waiting for the daily 08:00 UTC F-09 run. Calls EM_Onboarding_At_Risk_Eval only - no F-08 recalc side effects. The eval writes only At_Risk__c / At_Risk_Reason__c, so this flow does not re-trigger itself. Migration Mode honoured.</description>
+    <environments>Default</environments>
+    <interviewLabel>EM Onboarding At Risk Recheck {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EM Onboarding At Risk Recheck</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Call_Eval</targetReference>
+        </connector>
+        <filterFormula>NOT({!$Setup.Migration_Mode__c.Is_Active__c}) &amp;&amp; NOT(ISBLANK({!$Record.Study_Awarded_Date__c})) &amp;&amp; OR(ISCHANGED({!$Record.Onboarding_Status__c}), ISCHANGED({!$Record.EM_Status_Override__c}))</filterFormula>
+        <object>CareProgram</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Call_Eval</name>
+        <label>Evaluate at-risk rules now</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <flowName>EM_Onboarding_At_Risk_Eval</flowName>
+        <inputAssignments>
+            <name>in_CareProgramId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

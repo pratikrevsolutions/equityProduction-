@@ -1,0 +1,26 @@
+:host { display: block; }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.5rem 1.25rem; background: #fff; border-bottom: 3px solid #0b5cab; position: relative; }
+.brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: #032d60; }
+.brand:hover { text-decoration: none; }
+.logo { height: 44px; width: auto; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+.title { font-weight: 700; font-size: 1.05rem; color: #032d60; }
+.tagline { font-size: 0.72rem; color: #706e6b; }
+.nav { display: flex; align-items: center; gap: 0.25rem; }
+.link { padding: 0.45rem 0.75rem; color: #032d60; font-weight: 600; font-size: 0.9rem; text-decoration: none; border-bottom: 3px solid transparent; border-radius: 0.25rem 0.25rem 0 0; }
+.link:hover { background: #f3f3f3; color: #032d60; text-decoration: none; }
+.link.active { border-bottom-color: #0b5cab; }
+.user { display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 0.75rem; padding-left: 0.9rem; border-left: 1px solid #e5e5e5; font-size: 0.85rem; color: #444; }
+.avatar { display: inline-flex; align-items: center; justify-content: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: #0b5cab; color: #fff; font-weight: 700; font-size: 0.85rem; }
+.logout { color: #0b5cab; text-decoration: none; font-weight: 600; }
+.logout:hover { text-decoration: underline; }
+.burger { display: none; background: none; border: 1px solid #d8dde6; border-radius: 0.25rem; padding: 0.35rem 0.5rem; cursor: pointer; }
+@media (max-width: 760px) {
+    .burger { display: inline-flex; }
+    .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; align-items: stretch; background: #fff; border-bottom: 1px solid #e5e5e5; box-shadow: 0 6px 12px rgba(0,0,0,0.08); padding: 0.5rem 0.75rem; z-index: 50; }
+    .nav.open { display: flex; }
+    .link { border-bottom: 0; border-left: 3px solid transparent; border-radius: 0.25rem; }
+    .link.active { border-left-color: #0b5cab; border-bottom-color: transparent; }
+    .user { margin: 0.5rem 0 0; padding: 0.5rem 0 0; border-left: 0; border-top: 1px solid #e5e5e5; }
+    .name { flex: 1; }
+}

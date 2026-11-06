@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount/PARENTGROUPVAL(RowCount, GRAND_SUMMARY)</calculatedFormula>
+        <datatype>percent</datatype>
+        <description>cart conversion</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>CDF1</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>cart conversion</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>
+RowCount + IF(PREVGROUPVAL(RowCount, CDF1) &gt; 0 , PREVGROUPVAL(RowCount, CDF1), 0) + IF(PREVGROUPVAL(RowCount, CDF1,2) &gt; 0 , PREVGROUPVAL(RowCount, CDF1,2), 0)</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>CDF1</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Status Count</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>CDF1</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Cart$Id</field>
+    </columns>
+    <columns>
+        <field>Cart$Status</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(Cart.Status, &quot;Active&quot;, &quot;TotalCart&quot;,
+                  &quot;Checkout&quot;, &quot;ProceedToCheckout&quot;,
+                  &quot;Other&quot;, &quot;ProceedToCheckout&quot;,
+                  &quot;Closed&quot;, &quot;Closed&quot;,
+                  &quot;Pending Closed&quot;, &quot;Closed&quot;,
+                  &quot;Pending Delete&quot;, &quot;TotalCart&quot;,
+                  &quot;TotalCart&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <description>Conversion Funnel</description>
+        <developerName>CDF1</developerName>
+        <label>ConversionFunnel</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>What percent of carts are converted from cart, to checkout, to order across all stores?</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cart Conversion Funnel</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Commerce_cart__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Cart$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

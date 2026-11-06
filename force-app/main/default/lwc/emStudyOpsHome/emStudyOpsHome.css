@@ -1,0 +1,14 @@
+:host { display: block; }
+.home { display: flex; flex-direction: column; gap: 0.75rem; }
+.hero { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 0.9rem 1rem; border-radius: 0.4rem; color: #fff;
+        background: linear-gradient(120deg, #032d60 0%, #0b5cab 60%, #1b96ff 100%); }
+.hello { font-size: 1.3rem; font-weight: 700; }
+.date { font-size: 0.8rem; opacity: 0.9; margin-top: 0.15rem; }
+.actions { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.row-full { width: 100%; }
+.row-split { display: grid; grid-template-columns: 1.15fr 1fr; gap: 0.75rem; align-items: stretch; }
+.col { min-width: 0; }
+@media (max-width: 1000px) { .row-split { grid-template-columns: 1fr; } }
+
+.site-action { display: inline-flex; align-items: center; padding: 0.35rem 0.8rem; border: 1px solid rgba(255,255,255,0.7); border-radius: 0.3rem; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.85rem; }
+.site-action:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }

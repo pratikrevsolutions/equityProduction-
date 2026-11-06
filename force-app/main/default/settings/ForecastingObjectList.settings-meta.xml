@@ -1,0 +1,3501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingObjectListSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>OpportunityAmount</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>OpportunityRevenue</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>OpportunityQuantity</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingProductFamilyOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SPLITAMOUNT</field>
+            <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingProductFamilyOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingProductFamilyOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingProductFamilyOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingProductFamilyOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>SPLITAMOUNT</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>OpportunityLineItemRevenue</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingProductFamilyOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingProductFamilyOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingProductFamilyOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingProductFamilyOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingProductFamilyOppQtyListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>OpportunityLineItemQuantity</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingOpportunityRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SPLITAMOUNT</field>
+            <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingOpportunityRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingOpportunityRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingOpportunityRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingOpportunityRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>SPLITAMOUNT</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>OpportunityRevenueProductDate</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingOpportunityQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingOpportunityQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingOpportunityQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingOpportunityQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingOpportunityQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>OpportunityQuantityProductDate</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingProductFamilyRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SPLITAMOUNT</field>
+            <label>Forecasted Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingProductFamilyRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingProductFamilyRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingProductFamilyRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingProductFamilyRevenueProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>SPLITAMOUNT</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>LineItemRevenueProductDate</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+    <forecastingTypeObjectListSettings>
+        <forecastingObjectListLabelMappings>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <label>Created By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <label>Amount</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQOX</field>
+            <label>SQV Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <label>Close Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6Y0X</field>
+            <label>Opportunity Identified By?</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <label>Expected Revenue</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <label>Probability (%)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.ALIAS</field>
+            <label>Opportunity Owner Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuFHp</field>
+            <label>Opportunity Contact</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpY5</field>
+            <label>Enrollment Goal Low</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <label>Fiscal Quarter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJje</field>
+            <label>Patient Population</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuPsH</field>
+            <label>Protocol Complexity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <label>Recent Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <label>Latest Update/Next Step</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <label>Last Modified By Alias</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQGT</field>
+            <label>Assigned PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <label>Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.NAME</field>
+            <label>Contract Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CriticalInsights</field>
+            <label>__MISSING LABEL__ PropertyFile - val CriticalInsights not found in section ForecastingProductFamilyQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.NAME</field>
+            <label>Opportunity Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du5Li</field>
+            <label>Invited PI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6gSj</field>
+            <label>Drug/Device Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <label>Important</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cTbx</field>
+            <label>Enrollment Goal High</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <label>Last Stage Change Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.SITE</field>
+            <label>Account Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <label>Private</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuJtJ</field>
+            <label>Protocol Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <label>Contract Number</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuIyr</field>
+            <label>Indication</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSCr</field>
+            <label>Screen Fail Rate (Sponsor)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>AgentActivity</field>
+            <label>__MISSING LABEL__ PropertyFile - val AgentActivity not found in section ForecastingProductFamilyQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000E6alV</field>
+            <label>CRO (if applicable)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQht</field>
+            <label>Study Duration (Months)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQI5</field>
+            <label>Win/Loss Comments</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000FlGYX</field>
+            <label>Cost per Patient</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.TYPE</field>
+            <label>Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <label>Created Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <label>Last Modified Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <label>Lead Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.CLOSED</field>
+            <label>Closed</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.WON</field>
+            <label>Won</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <label>Days In Stage</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpUr</field>
+            <label>Projected FPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EfRdh</field>
+            <label>Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <label>Last Activity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>SalesMethodology</field>
+            <label>__MISSING LABEL__ PropertyFile - val SalesMethodology not found in section ForecastingProductFamilyQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>DESCRIPTION</field>
+            <label>Protocol Title</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+            <label>Push Count</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <label>Fiscal Period</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FULL_NAME</field>
+            <label>Owner Full Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003cSET</field>
+            <label>Site Selection Letter Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Du6Pq</field>
+            <label>Drug/Device Type</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuNQ7</field>
+            <label>FQ Submitted Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ActivityHeatmap</field>
+            <label>__MISSING LABEL__ PropertyFile - val ActivityHeatmap not found in section ForecastingProductFamilyQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQUz</field>
+            <label>FQ Received Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <label>Quantity</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQgH</field>
+            <label>Anticipated Study Activation Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <label>Age</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.LAST_NAME</field>
+            <label>Owner Last Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuGAf</field>
+            <label>Therapeutic Area</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003bpWT</field>
+            <label>Projected LPI</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <label>Fiscal Year</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuQZp</field>
+            <label>Expected Decision Date</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>Contacts</field>
+            <label>__MISSING LABEL__ PropertyFile - val Contacts not found in section ForecastingProductFamilyQuantityProductDateOppListFilter</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <label>Owner First Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>ACCOUNT.NAME</field>
+            <label>Account Name</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000DuDHd</field>
+            <label>Phase</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000EgCr7</field>
+            <label>Reason</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003oAP3</field>
+            <label>Assigned CRA</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00Nfn00000Dtfy1</field>
+            <label>Rescue Site</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>FORECAST_CATEGORY</field>
+            <label>Forecast Category</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>OPPORTUNITY.SOURCE</field>
+            <label>Source</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00NbV000003o5CT</field>
+            <label>Update Log</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListSelectedSettings>
+            <field>OPPORTUNITY.NAME</field>
+            <field>ACCOUNT.NAME</field>
+            <field>OPPORTUNITY.QUANTITY</field>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <field>OPPORTUNITY.PROBABILITY</field>
+            <field>FORECAST_CATEGORY</field>
+            <field>FULL_NAME</field>
+            <field>AgentActivity</field>
+            <field>CriticalInsights</field>
+            <field>SalesMethodology</field>
+            <field>ActivityHeatmap</field>
+            <field>Contacts</field>
+        </forecastingObjectListSelectedSettings>
+        <forecastingObjectListUnselectedSettings>
+            <field>CONTRACT.CONTRACT_NUMBER</field>
+            <field>CONTRACT.NAME</field>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <field>CORE.USERS.ALIAS</field>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <field>CORE.USERS.LAST_NAME</field>
+            <field>DESCRIPTION</field>
+            <field>OPPORTUNITY.EXP_AMOUNT</field>
+            <field>OPPORTUNITY.LEAD_SOURCE</field>
+            <field>OPPORTUNITY.NEXT_STEP</field>
+            <field>OPPORTUNITY.PRIVATE</field>
+            <field>OPPORTUNITY.TYPE</field>
+            <field>UPDATEDBY_USER.ALIAS</field>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
+            <field>OPPORTUNITY.CLOSED</field>
+            <field>OPPORTUNITY.WON</field>
+            <field>ACCOUNT.SITE</field>
+            <field>OPPORTUNITY.FISCAL_YEAR</field>
+            <field>OPPORTUNITY.FISCAL_QUARTER</field>
+            <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY</field>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00Nfn00000DuQgH</field>
+            <field>00NbV000003oAP3</field>
+            <field>00Nfn00000DuQGT</field>
+            <field>00Nfn00000FlGYX</field>
+            <field>00Nfn00000E6alV</field>
+            <field>00Nfn00000E6gSj</field>
+            <field>00Nfn00000Du6Pq</field>
+            <field>00NbV000003cTbx</field>
+            <field>00NbV000003bpY5</field>
+            <field>00Nfn00000DuQZp</field>
+            <field>00Nfn00000DuQUz</field>
+            <field>00Nfn00000DuNQ7</field>
+            <field>00Nfn00000DuIyr</field>
+            <field>00Nfn00000Du5Li</field>
+            <field>00Nfn00000DuFHp</field>
+            <field>00Nfn00000E6Y0X</field>
+            <field>00Nfn00000DuJje</field>
+            <field>00Nfn00000DuDHd</field>
+            <field>00NbV000003bpUr</field>
+            <field>00NbV000003bpWT</field>
+            <field>00Nfn00000DuPsH</field>
+            <field>00Nfn00000DuJtJ</field>
+            <field>00Nfn00000EgCr7</field>
+            <field>00Nfn00000Dtfy1</field>
+            <field>00NbV000003cSCr</field>
+            <field>00Nfn00000EfRdh</field>
+            <field>00NbV000003cSET</field>
+            <field>00Nfn00000DuQOX</field>
+            <field>00Nfn00000DuQht</field>
+            <field>00Nfn00000DuGAf</field>
+            <field>00NbV000003o5CT</field>
+            <field>00Nfn00000DuQI5</field>
+            <field>OPPORTUNITY.ISPRIORITYRECORD</field>
+            <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
+            <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
+            <field>OPPORTUNITY.AGE_IN_DAYS</field>
+            <field>OPPORTUNITY.SOURCE</field>
+            <field>OPPORTUNITY.LAST_STAGE_CHANGE</field>
+            <field>OPPORTUNITY.PUSH_COUNT</field>
+        </forecastingObjectListUnselectedSettings>
+        <forecastingTypeDeveloperName>LineItemQuantityProductDate</forecastingTypeDeveloperName>
+    </forecastingTypeObjectListSettings>
+</ForecastingObjectListSettings>

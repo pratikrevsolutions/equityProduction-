@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Care Program Related List",
+  "contentBody" : {
+    "activeViewId" : "Care_Program_Related_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "relatedlist-0Ze",
+    "urlPrefix" : "careprogram"
+  },
+  "urlName" : "care-program-related-list"
+}

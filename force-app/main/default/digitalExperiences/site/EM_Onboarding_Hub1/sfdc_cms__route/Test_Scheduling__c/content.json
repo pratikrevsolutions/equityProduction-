@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Test Scheduling",
+  "contentBody" : {
+    "activeViewId" : "Test_Scheduling",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-test-scheduling",
+    "urlPrefix" : "test-scheduling"
+  },
+  "urlName" : "test-scheduling"
+}

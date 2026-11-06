@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataSourceObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataSource>Engagement_A4S_Behavioral_Event_506A217A</dataSource>
+    <externalRecordIdentifier>Engagement_A4S_Behavioral_Events_506A217A</externalRecordIdentifier>
+    <masterLabel>Engagement_A4S_Behavioral_Events_506A217A</masterLabel>
+    <storageType>LOCAL</storageType>
+    <templateVersion>1</templateVersion>
+</DataSourceObject>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Related Records</masterLabel>
+    <description>Layout-independent related list (GraphQL) for LSC/FSL child objects that Grace's classic Account layouts cannot hold. Patient 360 tabs; also the recruitment-journey (Opportunity) page.</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>Account</object>
+                <object>Opportunity</object>
+                <object>Lead</object>
+                <object>CareProgram</object>
+            </objects>
+            <property name="childObject" type="String" label="Child object API name" required="true" description="e.g. HealthCondition, CareProgramEnrollee, Assessment, ServiceAppointment, CampaignMember"/>
+            <property name="parentField" type="String" label="Lookup field on the child that points at the patient" required="true" description="e.g. PatientId, AccountId, ContactId"/>
+            <property name="parentIdSource" type="String" label="Match the lookup against (Account Id = this record's Id)" datasource="Account Id,Person Contact Id" default="Account Id"/>
+            <property name="fields" type="String" label="Columns (comma-separated field API names; first is the link column; Rel.Field supported)" required="true"/>
+            <property name="title" type="String" label="Title" default="Related Records"/>
+            <property name="iconName" type="String" label="SLDS icon name" default="standard:record"/>
+            <property name="maxRows" type="Integer" label="Rows to display" default="10" min="1" max="50"/>
+            <property name="sortField" type="String" label="Sort field" default="CreatedDate"/>
+            <property name="sortDescending" type="Boolean" label="Sort descending" default="false"/>
+            <property name="showNew" type="Boolean" label="Show New button" default="false"/>
+            <property name="emptyMessage" type="String" label="Empty-state message" default="No records yet."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SR-01 Assign Principal Investigator, Sub</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Applies_When__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Depends_On__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Due_Offset_Days__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>Evidence_Field__c</field>
+        <value xsi:type="xsd:string">TeamMembers</value>
+    </values>
+    <values>
+        <field>Evidence_Value__c</field>
+        <value xsi:type="xsd:string">NOTNULL</value>
+    </values>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">Add the named people as team members with their roles (Principal Investigator, Sub-Investigator, Primary CRC, Backup CRC).</value>
+    </values>
+    <values>
+        <field>Is_Required__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Item_Key__c</field>
+        <value xsi:type="xsd:string">SR-01</value>
+    </values>
+    <values>
+        <field>Owner_Role__c</field>
+        <value xsi:type="xsd:string">Site Lead</value>
+    </values>
+    <values>
+        <field>Path_Step__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Per_Site__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Portal_Form__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sequence__c</field>
+        <value xsi:type="xsd:double">10.0</value>
+    </values>
+    <values>
+        <field>Subject__c</field>
+        <value xsi:type="xsd:string">Assign Principal Investigator, Sub-I, Primary CRC, Backup CRC</value>
+    </values>
+    <values>
+        <field>Workstream__c</field>
+        <value xsi:type="xsd:string">Site Readiness</value>
+    </values>
+</CustomMetadata>

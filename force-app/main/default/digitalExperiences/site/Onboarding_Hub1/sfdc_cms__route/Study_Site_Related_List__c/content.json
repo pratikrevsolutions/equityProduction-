@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Study Site Related List",
+  "contentBody" : {
+    "activeViewId" : "Study_Site_Related_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "relatedlist-184",
+    "urlPrefix" : "studysite"
+  },
+  "urlName" : "studysite-related-list"
+}

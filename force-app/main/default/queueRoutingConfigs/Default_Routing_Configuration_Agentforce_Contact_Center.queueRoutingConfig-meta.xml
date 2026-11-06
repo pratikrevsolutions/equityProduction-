@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QueueRoutingConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <capacityPercentage>100.0</capacityPercentage>
+    <capacityType>INHERITED</capacityType>
+    <isAttributeBased>false</isAttributeBased>
+    <label>Default Routing Configuration Agentforce Contact Center</label>
+    <routingModel>MOST_AVAILABLE</routingModel>
+    <routingPriority>1</routingPriority>
+</QueueRoutingConfig>

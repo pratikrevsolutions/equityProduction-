@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary.OrderPaymentSummaries$AuthorizationAmount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary.OrderPaymentSummaries$CapturedAmount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary.OrderPaymentSummaries$RefundedAmount</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>CASE(1,
+IF(OrderPaymentSummary.RefundedAmount &gt; 0 &amp;&amp; OrderPaymentSummary.RefundedAmount == OrderPaymentSummary.CapturedAmount ,1,0), &quot;Refunded&quot;,
+IF(OrderPaymentSummary.RefundedAmount &gt; 0 &amp;&amp; OrderPaymentSummary.RefundedAmount &lt; OrderPaymentSummary.CapturedAmount ,1,0), &quot;Partially Refunded&quot;,
+IF(OrderPaymentSummary.CapturedAmount &gt; 0 &amp;&amp; (OrderPaymentSummary.AuthorizationAmount == 0 || OrderPaymentSummary.CapturedAmount == OrderPaymentSummary.AuthorizationAmount),1,0), &quot;Captured&quot;,
+IF(OrderPaymentSummary.CapturedAmount &gt; 0 &amp;&amp; OrderPaymentSummary.CapturedAmount &lt; OrderPaymentSummary.AuthorizationAmount,1,0), &quot;Partially Captured&quot;,
+IF(OrderPaymentSummary.AuthorizationAmount &gt; 0 ,1,0), &quot;Authorized&quot;,
+&quot;Others&quot;)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Payment Status</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>The payment statuses, by store. These statuses are: authorized, captured, refunded, or partially refunded.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Payment Status by Store</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Payment_Summary_by_Store__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>OrderSummary$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

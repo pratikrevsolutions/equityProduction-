@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Marker set that grants nothing: membership of the EM Study Portal site only (site membership accepts profiles or permission sets, never permission-set groups). Assigned directly to portal users - the documented 9.2 exception (P5-1). Phase 5, 2026-09-08.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>EM PS Portal Member</label>
+</PermissionSet>

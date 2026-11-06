@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workstream__c</fullName>
+    <description>Owning workstream.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Workstream</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contract &amp; Budget</fullName>
+                <default>false</default>
+                <label>Contract &amp; Budget</label>
+            </value>
+            <value>
+                <fullName>Regulatory &amp; IRB</fullName>
+                <default>false</default>
+                <label>Regulatory &amp; IRB</label>
+            </value>
+            <value>
+                <fullName>SSU</fullName>
+                <default>false</default>
+                <label>SSU</label>
+            </value>
+            <value>
+                <fullName>Site Readiness</fullName>
+                <default>false</default>
+                <label>Site Readiness</label>
+            </value>
+            <value>
+                <fullName>CRIO &amp; eSource</fullName>
+                <default>false</default>
+                <label>CRIO &amp; eSource</label>
+            </value>
+            <value>
+                <fullName>Recruitment Readiness</fullName>
+                <default>false</default>
+                <label>Recruitment Readiness</label>
+            </value>
+            <value>
+                <fullName>Greenlight &amp; Activation</fullName>
+                <default>false</default>
+                <label>Greenlight &amp; Activation</label>
+            </value>
+            <value>
+                <fullName>IRB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>IRB</label>
+            </value>
+            <value>
+                <fullName>Regulatory &amp; SSU</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Regulatory &amp; SSU</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

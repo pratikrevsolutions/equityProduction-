@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>AgentWork_VoiceCall.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>AgentWork$OriginalQueue</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Call volume by queue</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>AgentWork.HandleTime:SUM / AgentWork_VoiceCall.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Handle Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>AgentWork.VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$FromPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$ToPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$CallType</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$CallSubtype</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>AgentWork$HandleTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>AgentWork$AfterConversationActualTime</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>AgentWork.SpeedToAnswer</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Time a caller spent in the queue before the call was answered.</description>
+        <developerName>CDF1</developerName>
+        <label>Queue Wait Time for Answered Calls</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Provides details on queue-level metrics such as wait time, along with service rep or AI agent performance metrics like average handle time and after-call work time.</description>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork$AcceptDateTime</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork.VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$OriginalQueue</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Queue Performance</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCallsByServiceRep__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork.VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

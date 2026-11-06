@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>OrderSummary$OrderedDate</field>
+    </columns>
+    <columns>
+        <field>OrderSummary$Name</field>
+    </columns>
+    <columns>
+        <field>OrderSummary.OrderPaymentSummaries$Name</field>
+    </columns>
+    <columns>
+        <field>OrderSummary$Status</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary.OrderPaymentSummaries$AuthorizationAmount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary.OrderPaymentSummaries$CapturedAmount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary.OrderPaymentSummaries$RefundedAmount</field>
+    </columns>
+    <description>The payment transactions for all orders, by store.</description>
+    <format>Tabular</format>
+    <name>Payment Transaction by Store</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Payment_Summary_by_Store__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>OrderSummary$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

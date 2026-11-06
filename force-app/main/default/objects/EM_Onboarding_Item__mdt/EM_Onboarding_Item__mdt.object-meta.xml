@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Phase 4 (D-12): study onboarding workstream template — one row per item; F-07 generates a Task per applicable row on the CareProgram (or per CareProgramSite), F-08 auto-completes items from the evidence field. Design: phase-4-onboarding-template-design.md §2-§3.</description>
+    <label>EM Onboarding Item</label>
+    <pluralLabel>EM Onboarding Items</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Schedule meetings</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>Priority</name>
+            <valueLiteral>Normal</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Task</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 14</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Task</itemEntityType>
+        <name>Schedule meetings</name>
+        <uniqueName>Schedule_meetings_0261ad48_c638_11f1_8a4f_156d44ceb351</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Event</itemEntityType>
+            <name>Subject</name>
+            <valueLiteral>Organize Activities</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>Event</itemEntityType>
+            <name>ActivityDate</name>
+            <valueFormula>StartDate + 28</valueFormula>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>Event</itemEntityType>
+        <name>Organize Activities</name>
+        <uniqueName>Organize_Activities_0261fb6a_c638_11f1_8a4f_5307fc501ef3</uniqueName>
+    </actionPlanTemplateItem>
+    <description>Default Template for modifying based on user needs</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Default Template</name>
+    <status>Final</status>
+    <targetEntityType>AccountPlanObjective</targetEntityType>
+    <uniqueName>Default_Template_024b6625_c638_11f1_8a4f_f5c1d8466506</uniqueName>
+</ActionPlanTemplate>

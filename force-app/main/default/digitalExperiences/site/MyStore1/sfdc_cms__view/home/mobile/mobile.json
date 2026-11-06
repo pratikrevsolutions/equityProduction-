@@ -1,0 +1,153 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "dxpStyle" : {
+            "padding" : {
+              "bottom" : "10px",
+              "left" : "10px",
+              "right" : "10px",
+              "top" : "10px"
+            }
+          }
+        },
+        "id" : "682ab9c8-becc-4b2a-bd26-98fb2902d0c2"
+      }, {
+        "attributes" : {
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "40591b12-84db-40d3-8bdd-f9fe6c3d4ee9"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "7px",
+              "left" : "0px",
+              "right" : "0px",
+              "top" : "16px"
+            }
+          }
+        },
+        "id" : "a7cb2206-1934-4143-9a8c-f08a22f2a249"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "padding" : {
+              "top" : "1.5rem"
+            }
+          }
+        },
+        "id" : "e7384f7d-ce13-401d-b931-17f76504a5c6"
+      }, {
+        "attributes" : {
+          "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+        },
+        "id" : "c0d35eae-3f85-4f17-ae7b-c26acf7ad48f"
+      }, {
+        "attributes" : {
+          "sectionColumnGutterWidth" : "0rem"
+        },
+        "id" : "ffd7e157-b428-4e15-9e40-d885a8612b25"
+      }, {
+        "attributes" : {
+          "contentWidth" : "70",
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0%",
+              "left" : "0%",
+              "right" : "0%",
+              "top" : "0%"
+            }
+          },
+          "height" : "400",
+          "singleButtonAlignment" : "right"
+        },
+        "id" : "f75be59a-a782-4877-bc88-fa7ff54cbe80"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "0rem",
+              "right" : "0rem",
+              "top" : "0rem"
+            }
+          },
+          "textAlign" : "right",
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "0bf99a1d-21f3-4adc-8ceb-e8542f7ef9cf"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "0rem",
+              "right" : "0rem",
+              "top" : "0rem"
+            }
+          }
+        },
+        "id" : "fe8b81cf-e372-4010-9e7a-9d4bf4d92c63"
+      }, {
+        "attributes" : {
+          "contentWidth" : "100",
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0%",
+              "left" : "0%",
+              "right" : "0%",
+              "top" : "0%"
+            }
+          },
+          "height" : "400"
+        },
+        "id" : "bd8f98b8-80be-4075-8bc7-2583b6c460a0"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "0rem",
+              "right" : "0rem",
+              "top" : "0rem"
+            }
+          },
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "9dfac0cc-6f86-4ff4-b5d3-c5128f07e27c"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "0rem",
+              "right" : "0rem",
+              "top" : "0rem"
+            }
+          }
+        },
+        "id" : "2085ff60-b1ac-4ab3-b333-a0122abb00f6"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "padding" : {
+              "bottom" : "2rem",
+              "top" : "1.5rem"
+            }
+          }
+        },
+        "id" : "64dbc58f-89f1-4ff0-afb5-e156d7d54f19"
+      }, {
+        "attributes" : {
+          "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+        },
+        "id" : "cd3cc979-985b-44ab-a766-1b8173afd1d3"
+      } ]
+    }
+  },
+  "urlName" : "home"
+}

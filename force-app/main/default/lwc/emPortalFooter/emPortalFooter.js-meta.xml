@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Portal Footer</masterLabel>
+    <description>EM Study Portal site footer: organisation line, year, optional environment note, configurable links (Label|/path;...) and support e-mail. Drop into the theme footer region. No Apex. Phase 5, 2026-09-16.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="orgName" type="String" label="Organisation" default="Equity Medical"/>
+            <property name="text" type="String" label="Text" default="Study onboarding portal"/>
+            <property name="environmentNote" type="String" label="Environment note (e.g. UAT preview)" default=""/>
+            <property name="links" type="String" label="Links (Label|/path; ...)" default="" description="Semicolon-separated Label|path pairs; site-relative paths, or absolute http(s)/mailto links."/>
+            <property name="supportEmail" type="String" label="Support e-mail" default=""/>
+            <property name="supportLabel" type="String" label="Support link label" default="Support"/>
+            <property name="hideYear" type="Boolean" label="Hide the year" default="false"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

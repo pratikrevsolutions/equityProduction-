@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Path_Step__c</fullName>
+    <description>For Days In Step rows: the step the study is sitting at.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Path Step</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Study Awarded</fullName>
+                <default>false</default>
+                <label>Study Awarded</label>
+            </value>
+            <value>
+                <fullName>Contract Executed</fullName>
+                <default>false</default>
+                <label>Contract Executed</label>
+            </value>
+            <value>
+                <fullName>Regulatory Packet Received</fullName>
+                <default>false</default>
+                <label>Regulatory Packet Received</label>
+            </value>
+            <value>
+                <fullName>Regulatory Packet Complete</fullName>
+                <default>false</default>
+                <label>Regulatory Packet Complete</label>
+            </value>
+            <value>
+                <fullName>IRB Submitted</fullName>
+                <default>false</default>
+                <label>IRB Submitted</label>
+            </value>
+            <value>
+                <fullName>Budget Finalized</fullName>
+                <default>false</default>
+                <label>Budget Finalized</label>
+            </value>
+            <value>
+                <fullName>eSource Completed</fullName>
+                <default>false</default>
+                <label>eSource Completed</label>
+            </value>
+            <value>
+                <fullName>Internal Greenlight</fullName>
+                <default>false</default>
+                <label>Internal Greenlight</label>
+            </value>
+            <value>
+                <fullName>Site Activated</fullName>
+                <default>false</default>
+                <label>Site Activated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

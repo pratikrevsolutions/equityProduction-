@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Study Portfolio</masterLabel>
+    <description>At-a-glance board of every study: onboarding status, progress, workstream states from evidence, next action, at-risk. Abbey's weekly-meeting view (Show and Tell 2026-09-03). GraphQL, no Apex. Phase 4 WU4.</description>
+    <targets>
+        <target>lightning__HomePage</target>
+        <target>lightning__AppPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__HomePage,lightning__AppPage">
+            <property name="title" type="String" label="Board title" default="Study Onboarding"/>
+            <property name="subtitle" type="String" label="Board subtitle" default="Where every study stands in each onboarding workstream."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

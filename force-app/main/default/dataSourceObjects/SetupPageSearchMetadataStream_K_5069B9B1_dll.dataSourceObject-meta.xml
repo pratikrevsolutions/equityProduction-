@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataSourceObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataSource>SetupPageSearchMetadataConnector_K7M3X_777f1294_fa3d_4cea_8257_cc13c4092957</dataSource>
+    <externalRecordIdentifier>SetupPageSearchMetadataStream_K7M3X_SetupPageSearchMetadata_5069B9B1</externalRecordIdentifier>
+    <masterLabel>SetupPageSearchMetadataStream_K7M3X_SetupPageSearchMetadata_5069B9B1</masterLabel>
+    <storageType>LOCAL</storageType>
+    <templateVersion>1</templateVersion>
+</DataSourceObject>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF(CDF1:SUM = 0, 0, VoiceCall.CustomerHoldDuration:SUM/CDF1:SUM)</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Average hold time for calls where the caller was put on hold.</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Customer Hold Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$FromPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$ToPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$VendorType</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallStartDateTime</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallEndDateTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>VoiceCall$CallDurationInSeconds</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CustomerHoldDuration</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallDisposition</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallResolution</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$DisconnectReason</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(ISNULL(VoiceCall.CustomerHoldDuration), 0 , 1)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Indicates whether the caller was put on hold.</description>
+        <developerName>CDF1</developerName>
+        <label>Was On Hold</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Provides voice call details, including participants, duration, call type, and channel.</description>
+    <filter>
+        <criteriaItems>
+            <column>VoiceCall$CallType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1,2,6</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>VoiceCall$CallType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>VoiceCall$CallSubtype</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Voice Call Details</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCalls__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

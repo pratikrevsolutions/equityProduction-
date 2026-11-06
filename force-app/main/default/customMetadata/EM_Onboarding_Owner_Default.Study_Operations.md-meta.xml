@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Study Operations — Greenlight &amp; Activati</label>
+    <protected>false</protected>
+    <values>
+        <field>Default_Username__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Fallback_To_Study_Owner__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Notes__c</field>
+        <value xsi:type="xsd:string">Abbey Engesetter — username set at Phase 6 provisioning</value>
+    </values>
+    <values>
+        <field>Owner_Role__c</field>
+        <value xsi:type="xsd:string">Study Operations</value>
+    </values>
+    <values>
+        <field>Workstream__c</field>
+        <value xsi:type="xsd:string">Greenlight &amp; Activation</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,17 @@
+<template>
+    <footer class="foot">
+        <div class="left">
+            <span class="org">{orgName}</span>
+            <span class="sep">&middot;</span>
+            <span>{text}</span>
+            <template lwc:if={showYear}><span class="sep">&middot;</span><span>&copy; {year}</span></template>
+            <template lwc:if={hasNote}><span class="note">{environmentNote}</span></template>
+        </div>
+        <template lwc:if={hasLinks}>
+            <nav class="right">
+                <template for:each={linkItems} for:item="l"><a key={l.key} href={l.href}>{l.label}</a></template>
+                <template lwc:if={hasSupport}><a href={supportHref}>{supportLabel}</a></template>
+            </nav>
+        </template>
+    </footer>
+</template>

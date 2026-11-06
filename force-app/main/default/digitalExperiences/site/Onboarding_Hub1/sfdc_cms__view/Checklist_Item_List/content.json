@@ -1,0 +1,68 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Checklist Item List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"d3d35401-fe90-4589-8f23-850f73e785e3\",\"columns\":[{\"UUID\":\"fec03ebc-4177-4463-ab63-3cbfc2765195\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:emPortalStudyPortfolio",
+              "id" : "d99cf783-21fa-4ed6-8d6a-2129ac0f4219",
+              "type" : "component"
+            } ],
+            "id" : "fec03ebc-4177-4463-ab63-3cbfc2765195",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d3d35401-fe90-4589-8f23-850f73e785e3",
+          "type" : "component"
+        } ],
+        "id" : "eb6beeeb-2e8a-40c4-96b7-152b9391da84",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "dxpStyle" : { },
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "a138f14f-d0b9-4364-a499-1de2d37a1e64",
+          "type" : "component"
+        } ],
+        "id" : "b7166051-a401-4314-9a40-f4dfb5a7d214",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "a6800eef-fa15-4040-9112-ccb653b95c52",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "list-0dd"
+  },
+  "urlName" : "checklistitem-list"
+}

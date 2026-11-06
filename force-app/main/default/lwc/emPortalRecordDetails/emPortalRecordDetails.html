@@ -1,0 +1,64 @@
+<template>
+    <template lwc:if={loadError}>
+        <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">{loadError}</div>
+    </template>
+    <template lwc:elseif={sections.length}>
+        <lightning-record-edit-form record-id={recordId} object-api-name={objectApiName}
+            onsubmit={handleSubmit} onsuccess={handleSuccess} onerror={handleError}>
+            <lightning-messages></lightning-messages>
+            <template for:each={sections} for:item="s">
+                <section key={s.key} class="em-prd-section">
+                    <template lwc:if={s.useHeading}>
+                        <button type="button" class="em-prd-sec-head" data-key={s.key} aria-expanded={s.ariaExpanded}
+                            onclick={toggleSection}>
+                            <lightning-icon icon-name={s.chevron} size="x-small" class="em-prd-chevron"></lightning-icon>
+                            <span>{s.heading}</span>
+                        </button>
+                    </template>
+                    <div class="em-prd-grid" lwc:if={s.open}>
+                        <template for:each={s.rows} for:item="r">
+                            <div key={r.key} class="em-prd-row">
+                                <template for:each={r.items} for:item="it">
+                                    <div key={it.key} class={it.cls}>
+                                        <template lwc:if={it.blank}></template>
+                                        <template lwc:elseif={editing}>
+                                            <template lwc:if={it.editable}>
+                                                <lightning-input-field field-name={it.apiName} required={it.required}></lightning-input-field>
+                                            </template>
+                                            <template lwc:else>
+                                                <lightning-output-field field-name={it.apiName}></lightning-output-field>
+                                            </template>
+                                        </template>
+                                        <template lwc:else>
+                                            <div class="em-prd-view">
+                                                <lightning-output-field field-name={it.apiName} class="em-prd-out"></lightning-output-field>
+                                                <template lwc:if={it.editable}>
+                                                    <button type="button" class="em-prd-pencil" title={it.editTitle}
+                                                        data-field={it.apiName} onclick={startEdit}>
+                                                        <lightning-icon icon-name="utility:edit" size="xx-small"></lightning-icon>
+                                                    </button>
+                                                </template>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                    </div>
+                </section>
+            </template>
+            <template lwc:if={editing}>
+                <div class="em-prd-footer">
+                    <lightning-button label="Cancel" onclick={cancelEdit} disabled={saving}></lightning-button>
+                    <lightning-button label="Save" type="submit" variant="brand" class="em-prd-save" disabled={saving}></lightning-button>
+                </div>
+            </template>
+        </lightning-record-edit-form>
+        <template lwc:if={savedMessage}>
+            <div class="em-prd-saved" role="status">{savedMessage}</div>
+        </template>
+    </template>
+    <template lwc:else>
+        <div class="em-prd-loading"><lightning-spinner alternative-text="Loading" size="small"></lightning-spinner></div>
+    </template>
+</template>

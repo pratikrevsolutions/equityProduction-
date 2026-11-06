@@ -1,0 +1,68 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Care Program List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"396be6fb-0f5c-46ed-9896-29749c7f3aff\",\"columns\":[{\"UUID\":\"21244d86-4ff6-44be-875a-5e541a27c60d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:emPortalStudyPortfolio",
+              "id" : "9980b143-7ae2-4042-9005-5a12e56755f7",
+              "type" : "component"
+            } ],
+            "id" : "21244d86-4ff6-44be-875a-5e541a27c60d",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "396be6fb-0f5c-46ed-9896-29749c7f3aff",
+          "type" : "component"
+        } ],
+        "id" : "82abd05b-8001-4966-b21b-ec4ff2503713",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "dxpStyle" : { },
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "f6bf172b-3ad6-48a5-86a5-22f703b769fd",
+          "type" : "component"
+        } ],
+        "id" : "6dce7290-cf78-4371-9421-e6c2939cf9f9",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "f4249cf7-0608-4594-af07-6000114a1929",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "list-0Ze"
+  },
+  "urlName" : "care-program-list"
+}

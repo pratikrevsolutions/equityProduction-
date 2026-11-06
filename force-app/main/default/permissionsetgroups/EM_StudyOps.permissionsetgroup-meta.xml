@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Abbey&apos;s study operations team (§9.2.1).</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>EM Study Ops</label>
+    <permissionSets>EM_PS_ActionPlan_Manage</permissionSets>
+    <permissionSets>EM_PS_Portal_Forms</permissionSets>
+    <permissionSets>EM_PS_Study_Core</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

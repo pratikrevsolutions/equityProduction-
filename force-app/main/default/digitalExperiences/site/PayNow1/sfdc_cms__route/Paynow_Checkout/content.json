@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Paynow Checkout",
+  "contentBody" : {
+    "activeViewId" : "paynow_checkout",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "paynow-checkout",
+    "urlPrefix" : "paynow-checkout"
+  },
+  "urlName" : "paynow-checkout"
+}

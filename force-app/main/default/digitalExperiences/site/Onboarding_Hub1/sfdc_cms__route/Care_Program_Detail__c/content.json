@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Care Program Detail",
+  "contentBody" : {
+    "activeViewId" : "Care_Program_Detail",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "detail-0Ze",
+    "urlPrefix" : "careprogram"
+  },
+  "urlName" : "care-program-detail"
+}

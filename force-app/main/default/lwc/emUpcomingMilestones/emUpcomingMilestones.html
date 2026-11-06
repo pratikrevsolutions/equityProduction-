@@ -1,0 +1,31 @@
+<template>
+    <div class="card">
+        <div class="head">
+            <div class="title"><lightning-icon icon-name="standard:date_time" size="small" class="slds-m-right_x-small"></lightning-icon>{title}</div>
+            <span class="count">{count}</span>
+        </div>
+        <template lwc:if={errorText}><div class="slds-text-color_error">{errorText}</div></template>
+        <template lwc:if={hasItems}>
+            <ul class="timeline">
+                <template for:each={items} for:item="m">
+                    <li key={m.key} class="ms">
+                        <div class="dot-col"><span class={m.cls}></span></div>
+                        <div class="ms-main">
+                            <div class="ms-top"><span class="ms-date">{m.date}</span><span class={m.whenClass}>{m.when}</span></div>
+                            <div class="ms-label">{m.label}<template lwc:if={m.extra}><span class="extra"> — {m.extra}</span></template></div>
+                            <a href={m.url} class="ms-study">{m.study}</a>
+                            <template lwc:if={m.atRisk}><span class="risk">At risk</span></template>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template lwc:if={showEmpty}><div class="empty">No milestones in the next {horizonDays} days — set Target Activation / SIV dates on the studies to see them here.</div></template>
+        <template lwc:if={hasRecent}>
+            <div class="recent-head">Awarded in the last 30 days</div>
+            <ul class="recent"><template for:each={recentAwards} for:item="a">
+                <li key={a.id}><a href={a.url}>{a.name}</a><span class="recent-meta">{a.date} · {a.status}</span></li>
+            </template></ul>
+        </template>
+    </div>
+</template>

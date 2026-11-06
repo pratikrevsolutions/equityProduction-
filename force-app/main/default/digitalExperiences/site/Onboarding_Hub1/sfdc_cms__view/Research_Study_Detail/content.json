@@ -1,0 +1,74 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Research Study Detail",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"3a176afb-9250-4ead-b6bf-8f51cd4d29a4\",\"columns\":[{\"UUID\":\"67676155-9347-41bf-8a99-b2c3c9c798f9\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "maxLists" : 6,
+                "objectApiName" : "ResearchStudy",
+                "recordId" : "{!recordId}"
+              },
+              "definition" : "c:emPortalRecordPage",
+              "id" : "f7d75766-0911-4e99-b1fe-863a98346feb",
+              "type" : "component"
+            } ],
+            "id" : "67676155-9347-41bf-8a99-b2c3c9c798f9",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3a176afb-9250-4ead-b6bf-8f51cd4d29a4",
+          "type" : "component"
+        } ],
+        "id" : "528ccdfa-e092-4e8a-b8ee-df42a3d6573d",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "{!Record._Object}: {!Record._Title}",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "1e102b47-d166-4978-9a43-41a1e18414dc",
+          "type" : "component"
+        } ],
+        "id" : "9d9f0236-2122-4813-9eb9-db37cb817ccd",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "8f497737-07a0-4efa-a343-e24291f9c6d1",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "detail-7rs"
+  },
+  "urlName" : "researchstudy-detail"
+}

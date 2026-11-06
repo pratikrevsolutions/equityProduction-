@@ -1,0 +1,6 @@
+{
+  "apiName" : "Pay",
+  "type" : "sfdc_cms__route",
+  "path" : "routes",
+  "contentKey" : "MCA27QXADHLBHU3FULXTX2QER3OI"
+}

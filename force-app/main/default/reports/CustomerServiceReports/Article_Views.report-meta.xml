@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>KnowledgeArticle$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>KnowledgeArticle$LastPublishedDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>KnowledgeArticle.ViewStats$ViewCount</field>
+    </columns>
+    <description>What is the number of views on Knowledge articles?</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeArticle$Title</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>KnowledgeArticle.ViewStats$Channel</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Article Views</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Articles_Views__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>KnowledgeArticle$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

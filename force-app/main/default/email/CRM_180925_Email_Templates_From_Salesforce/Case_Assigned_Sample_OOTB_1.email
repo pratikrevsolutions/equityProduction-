@@ -1,0 +1,12 @@
+<html>
+<head>
+<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Hello,<br />
+<br />
+Case #{{{Case.CaseNumber}}} was assigned to you by {{{Sender.FirstName}}} {{{Sender.LastName}}}.<br />
+<br />
+Thank you,<br />
+<br />
+{{{Organization.Name}}} Customer Service
+</body></html>

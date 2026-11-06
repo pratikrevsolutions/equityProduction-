@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Number Of Orders</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>OrderSummary.OrderItemSummaries$Product2</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Number Of Orders</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>OrderSummary.OrderItemSummaries$OriginalOrderItem.Id</field>
+    </columns>
+    <columns>
+        <field>OrderSummary$OriginalOrder</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary$TotalProductAmount</field>
+    </columns>
+    <description>Which products are ordered the most?</description>
+    <filter>
+        <criteriaItems>
+            <column>OrderSummary.OrderItemSummaries$Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Order Product</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OrderSummary.OrderItemSummaries$Product2</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Top Products Sold</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Order_with_Products_Summaries__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>OrderSummary$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

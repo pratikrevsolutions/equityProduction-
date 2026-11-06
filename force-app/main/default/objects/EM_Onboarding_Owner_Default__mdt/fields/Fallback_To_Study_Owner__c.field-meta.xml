@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fallback_To_Study_Owner__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>When the username is blank or inactive, assign to the Study owner.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Fallback To Study Owner</label>
+    <type>Checkbox</type>
+</CustomField>

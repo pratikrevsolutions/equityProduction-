@@ -1,0 +1,83 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Care Program Detail",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"e8fecd84-9d06-4fb2-aca9-91c2e7331de0\",\"columns\":[{\"UUID\":\"00ae76d8-a76e-445f-887e-aa0fd79d1096\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "recordId" : "{!recordId}"
+              },
+              "definition" : "c:emPortalStudyCard",
+              "id" : "d9403e66-5830-4533-af32-0d27e8231d2f",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "itemsTitle" : "Onboarding Items",
+                "maxLists" : 6,
+                "recordId" : "{!recordId}",
+                "relatedLists" : "CareProgramSites,CareProgramTeamMembers,ResearchStudies"
+              },
+              "definition" : "c:emPortalStudyTabs",
+              "id" : "22ea2daa-d531-49af-bb6e-d619cda07da9",
+              "type" : "component"
+            } ],
+            "id" : "00ae76d8-a76e-445f-887e-aa0fd79d1096",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "e8fecd84-9d06-4fb2-aca9-91c2e7331de0",
+          "type" : "component"
+        } ],
+        "id" : "0c646c01-8183-4c64-b300-627a24c982d9",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "{!Record._Object}: {!Record._Title}",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "f2e4416c-d45f-4113-bc3b-7b2b528a06db",
+          "type" : "component"
+        } ],
+        "id" : "3c3213f8-c06f-45dd-82dc-0e9dd66485a9",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "2c52cee5-1ae8-43a9-a4f2-a378c4ea7727",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "detail-0Ze"
+  },
+  "urlName" : "care-program-detail"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>F-08 trigger (b): an onboarding evidence field on the study changed (contract / budget / SSU / IRB / site readiness / SIV / CRIO / eSource / recruitment readiness / greenlight / activation…) — including the Internal Greenlight approval&apos;s field updates. Runs EM_Onboarding_Recalc, which auto-completes the matching tasks and advances the path. Not on create; honours Migration Mode.</description>
+    <environments>Default</environments>
+    <interviewLabel>EM Onboarding Program Sync {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EM Onboarding Program Sync</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Run_Recalc</targetReference>
+        </connector>
+        <filterFormula>NOT(ISNEW()) &amp;&amp; NOT({!$Setup.Migration_Mode__c.Is_Active__c}) &amp;&amp; OR(ISCHANGED({!$Record.Selection_Letter_Received__c}), ISCHANGED({!$Record.Contract_Status__c}), ISCHANGED({!$Record.Budget_Status__c}), ISCHANGED({!$Record.Per_Visit_Stipend__c}), ISCHANGED({!$Record.Advertising_Budget__c}), ISCHANGED({!$Record.SSU_Packet_Received_Date__c}), ISCHANGED({!$Record.Regulatory_Packet_Complete__c}), ISCHANGED({!$Record.SSU_Status__c}), ISCHANGED({!$Record.IRB_Stipend_Submitted__c}), ISCHANGED({!$Record.IRB_Status__c}), ISCHANGED({!$Record.Site_Number__c}), ISCHANGED({!$Record.Site_Readiness__c}), ISCHANGED({!$Record.SIV_Status__c}), ISCHANGED({!$Record.SIV_Completed__c}), ISCHANGED({!$Record.CRIO_Status__c}), ISCHANGED({!$Record.eSource_Build_Status__c}), ISCHANGED({!$Record.Screening_Target__c}), ISCHANGED({!$Record.Recruitment_Readiness__c}), ISCHANGED({!$Record.Internal_Greenlight__c}), ISCHANGED({!$Record.Sponsor_Activation_Date__c}), ISCHANGED({!$Record.Activation_Date__c}))</filterFormula>
+        <object>CareProgram</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Run_Recalc</name>
+        <label>Recalc the study</label>
+        <locationX>250</locationX>
+        <locationY>120</locationY>
+        <flowName>EM_Onboarding_Recalc</flowName>
+        <inputAssignments>
+            <name>in_CareProgramId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Study Site List",
+  "contentBody" : {
+    "activeViewId" : "Study_Site_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "list-184",
+    "urlPrefix" : "studysite"
+  },
+  "urlName" : "studysite-list"
+}

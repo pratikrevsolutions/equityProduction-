@@ -1,0 +1,106 @@
+:host { display: block; }
+/* emsp- prefix: generic class names collide with Lightning / portal theme styles */
+.emsp-board { background: #fff; border: 1px solid #e5e5e5; border-radius: 0.25rem; padding: 1.1rem; }
+.emsp-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.emsp-title { font-size: 1.9rem; font-weight: 700; color: #181818; }
+.emsp-sub { font-size: 0.9rem; color: #706e6b; margin-top: 0.15rem; }
+.emsp-controls { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; flex: 0 1 40rem; justify-content: flex-end; }
+.emsp-location { flex: 0 0 11rem; }
+.emsp-search { flex: 0 1 18rem; min-width: 12rem; }
+.emsp-sort { display: flex; align-items: center; gap: 0.4rem; }
+.emsp-sort-label { font-size: 0.9rem; color: #444; white-space: nowrap; }
+.emsp-sort-input { min-width: 16rem; }
+
+.emsp-tabs { display: flex; gap: 1.5rem; border-bottom: 1px solid #e5e5e5; margin-bottom: 1.1rem; }
+.emsp-tab { background: none; border: none; border-bottom: 2px solid transparent; padding: 0.5rem 0.1rem 0.7rem; font-size: 1.1rem; font-weight: 600; color: #706e6b; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; }
+.emsp-tab:hover { color: #181818; }
+.emsp-tab-active { color: #032d60; border-bottom-color: #032d60; }
+.emsp-tab-count { background: #ecebea; color: #444; border-radius: 1rem; padding: 0.1rem 0.6rem; font-size: 0.82rem; font-weight: 700; }
+.emsp-tab-active .emsp-tab-count { background: #032d60; color: #fff; }
+
+.emsp-cards { display: flex; flex-direction: column; gap: 0.55rem; }
+.emsp-empty { color: #706e6b; padding: 1rem; text-align: center; }
+
+/* ---------- card v2: light header + colored accent bar + boxed-per-workstream checklist ---------- */
+.emsp-scard { background: #fff; border: 1px solid #e3e3ea; border-left-width: 4px; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 1px 3px rgba(20, 20, 40, 0.06); font-size: 0.95rem; }
+.emsp-accent-green { border-left-color: #2e844a; }
+.emsp-accent-amber { border-left-color: #d9822b; }
+.emsp-accent-red { border-left-color: #c23934; }
+
+.emsp-scard-header { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; padding: 0.55rem 0.8rem; border-bottom: 1px solid #f0f0f3; }
+.emsp-scard-headleft { flex: 1 1 14rem; min-width: 11rem; }
+.emsp-scard-titlerow { display: flex; align-items: center; gap: 0.45rem; text-decoration: none; flex-wrap: wrap; }
+.emsp-scard-protocol { font-size: 1.15rem; font-weight: 800; color: #181818; }
+.emsp-scard-badge { display: inline-block; border-radius: 1rem; padding: 0.02rem 0.5rem; font-size: 0.66rem; font-weight: 700; }
+.emsp-badge-light { background: #fff; border: 1px solid #d8d8d8; color: #444; }
+.emsp-badge-dark { background: #2b63c4; color: #fff; }
+.emsp-scard-sponsor { font-size: 0.8rem; color: #706e6b; margin-top: 0.04rem; }
+.emsp-scard-metaline { display: flex; gap: 0.8rem; flex-wrap: wrap; font-size: 0.7rem; color: #6b6b6b; margin-top: 0.25rem; }
+.emsp-scard-metaline strong { color: #333; font-weight: 700; }
+
+.emsp-stat-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #5c5a58; white-space: nowrap; }
+.emsp-lock-inline { font-weight: 400; text-transform: none; letter-spacing: normal; margin-left: 0.2rem; }
+.emsp-scard-gl { flex: 0 0 12rem; }
+.emsp-gl-main { font-size: 0.9rem; font-weight: 800; color: #181818; display: flex; align-items: center; gap: 0.35rem; margin-top: 0.12rem; }
+.emsp-stat-sub { font-size: 0.66rem; color: #6b6b6b; margin-top: 0.12rem; }
+.emsp-gl-dot { display: inline-block; width: 0.9rem; height: 0.9rem; border-radius: 50%; background: #fff; border: 2.5px solid #ba0517; flex: none; box-sizing: border-box; }
+.emsp-gl-dot.emsp-gl-dot-yes { background: #2e844a; border-color: #2e844a; }
+
+.emsp-scard-milestones { flex: 0 0 12rem; }
+.emsp-ml-item { display: flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; color: #444; margin-top: 0.22rem; }
+.emsp-ml-item .emsp-tl-done, .emsp-ml-item .emsp-tl-pending, .emsp-ml-item .emsp-tl-soon { width: 0.55rem; height: 0.55rem; border-radius: 50%; flex: none; display: inline-flex; align-items: center; justify-content: center; font-size: 0.42rem; color: #fff; }
+.emsp-tl-done { background: #2e844a; }
+.emsp-tl-done::before { content: '✓'; }
+.emsp-tl-pending { background: #fff; border: 1.5px solid #d8d8d8; }
+.emsp-tl-soon { background: #d9822b; }
+
+/* ---------- Workstreams: one bordered box per field, side by side ---------- */
+.emsp-wk-grid { display: grid; grid-template-columns: repeat(7, minmax(8.2rem, 1fr)); gap: 0.5rem; padding: 0.55rem 0.8rem; overflow-x: auto; }
+.emsp-wk-col { border: 1px solid #ececf2; border-radius: 0.4rem; padding: 0.45rem 0.55rem; background: #fff; }
+.emsp-wk-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.3rem; }
+.emsp-wk-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; color: #181818; }
+.emsp-wk-count { font-size: 0.66rem; font-weight: 700; color: #6b6b6b; white-space: nowrap; }
+.emsp-wk-bar { height: 3px; border-radius: 2px; margin: 0.32rem 0 0.42rem; }
+.emsp-wk-bar-done { background: #2e844a; }
+.emsp-wk-bar-active { background: #d9822b; }
+.emsp-wk-bar-todo { background: #c23934; }
+
+.emsp-wk-items { display: flex; flex-direction: column; gap: 0.32rem; }
+.emsp-ms-row { display: flex; align-items: flex-start; gap: 0.35rem; font-size: 0.7rem; color: #a19e9c; cursor: pointer; line-height: 1.25; }
+.emsp-ms-row input[type="checkbox"] { margin: 0.15rem 0 0; flex: none; cursor: pointer; }
+.emsp-ms-row input[type="checkbox"]:disabled { cursor: not-allowed; opacity: 0.5; }
+.emsp-wk-itemtext { display: flex; flex-direction: column; }
+.emsp-wk-date { font-size: 0.62rem; font-weight: 400; color: #6b6b6b; margin-top: 0.06rem; }
+.emsp-ms-row.emsp-ms-done { color: #2e844a; font-weight: 700; }
+.emsp-ms-row.emsp-ms-done .emsp-wk-date { color: #2e844a; }
+.emsp-ms-row.emsp-ms-active { color: #8c4b02; font-weight: 700; }
+.emsp-ms-row.emsp-ms-active .emsp-wk-date { color: #8c4b02; }
+.emsp-ms-row.emsp-ms-todo { color: #8e030f; font-weight: 700; }
+.emsp-ms-row.emsp-ms-todo .emsp-wk-date { color: #8e030f; }
+
+/* ---------- Study Team ---------- */
+.emsp-team { padding: 0.45rem 0.8rem 0.6rem; border-top: 1px solid #ececf2; background: #fafafc; }
+.emsp-pg-title { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #5c5a58; margin-bottom: 0.32rem; }
+.emsp-team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem 0.75rem; }
+.emsp-team-cell { display: flex; align-items: center; gap: 0.35rem; }
+.emsp-team-avatar { flex: none; width: 1.45rem; height: 1.45rem; border-radius: 50%; background: #2b63c4; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.56rem; font-weight: 700; }
+.emsp-team-rolelabel { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase; color: #5c5a58; }
+.emsp-team-name { font-size: 0.68rem; font-weight: 600; color: #181818; }
+.emsp-team-name.emsp-team-missing { color: #ba0517; font-weight: 400; }
+
+/* ---------- global legend (once, bottom of the whole list) ---------- */
+.emsp-legend2 { display: flex; gap: 1.1rem; flex-wrap: wrap; font-size: 0.85rem; color: #444; margin-top: 0.8rem; }
+.emsp-legend2-item { display: inline-flex; align-items: center; gap: 0.35rem; }
+.emsp-lg-box { width: 0.85rem; height: 0.85rem; border-radius: 0.15rem; display: inline-flex; align-items: center; justify-content: center; font-size: 0.6rem; color: #fff; font-weight: 700; flex: none; }
+.emsp-lg-box.emsp-lg-done { background: #2e844a; }
+.emsp-lg-box.emsp-lg-active { background: #d9822b; }
+.emsp-lg-box.emsp-lg-todo { background: #c23934; }
+.emsp-lg-box.emsp-lg-earlier { background: #fff; border: 1.5px solid #d8d8d8; }
+
+@media (max-width: 1100px) {
+    .emsp-wk-grid { grid-template-columns: repeat(4, minmax(7.8rem, 1fr)); }
+}
+@media (max-width: 640px) {
+    .emsp-wk-grid { grid-template-columns: repeat(2, minmax(7.8rem, 1fr)); }
+    .emsp-scard-header { flex-direction: column; }
+}

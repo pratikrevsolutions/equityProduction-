@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Migration bypass switch (TDD §11.2). Every EM_* flow includes !$Setup.Migration_Mode__c.Is_Active__c in its entry condition so data loads never fire nurture/reminder sends. Org default stays unchecked; checked only for the duration of a migration load.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Migration Mode</label>
+    <visibility>Public</visibility>
+</CustomObject>

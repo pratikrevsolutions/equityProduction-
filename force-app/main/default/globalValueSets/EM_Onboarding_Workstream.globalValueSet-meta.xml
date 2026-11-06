@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Contract &amp; Budget</fullName>
+        <default>false</default>
+        <label>Contract &amp; Budget</label>
+    </customValue>
+    <customValue>
+        <fullName>Regulatory &amp; IRB</fullName>
+        <default>false</default>
+        <label>Regulatory &amp; IRB</label>
+    </customValue>
+    <customValue>
+        <fullName>SSU</fullName>
+        <default>false</default>
+        <label>SSU</label>
+    </customValue>
+    <customValue>
+        <fullName>Site Readiness</fullName>
+        <default>false</default>
+        <label>Site Readiness</label>
+    </customValue>
+    <customValue>
+        <fullName>CRIO &amp; eSource</fullName>
+        <default>false</default>
+        <label>CRIO &amp; eSource</label>
+    </customValue>
+    <customValue>
+        <fullName>Recruitment Readiness</fullName>
+        <default>false</default>
+        <label>Recruitment Readiness</label>
+    </customValue>
+    <customValue>
+        <fullName>Greenlight &amp; Activation</fullName>
+        <default>false</default>
+        <label>Greenlight &amp; Activation</label>
+    </customValue>
+    <customValue>
+        <fullName>IRB</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>IRB</label>
+    </customValue>
+    <customValue>
+        <fullName>Regulatory &amp; SSU</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Regulatory &amp; SSU</label>
+    </customValue>
+    <description>Phase 4 onboarding workstreams (design doc §3). Shared by Task.EM_Workstream__c and the onboarding custom metadata. WU10-36 (Abbey, 2026-09-24): Regulatory &amp; IRB + SSU replace Regulatory &amp; SSU + IRB (old values inactive, register DC-14).</description>
+    <masterLabel>EM Onboarding Workstream</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

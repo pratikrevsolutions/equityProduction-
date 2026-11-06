@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExplainabilityActionDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionLogSchemaType>Other</actionLogSchemaType>
+    <applicationSubtype>BnftVerWF</applicationSubtype>
+    <applicationType>PatientServicesProgram</applicationType>
+    <description>Audit log related to automation of pharmacy benefit verification.</description>
+    <internal>false</internal>
+    <masterLabel>Pharmacy Benefit Verification Automation Workflow Audit Log</masterLabel>
+    <processType>PhBnVerf</processType>
+</ExplainabilityActionDefinition>

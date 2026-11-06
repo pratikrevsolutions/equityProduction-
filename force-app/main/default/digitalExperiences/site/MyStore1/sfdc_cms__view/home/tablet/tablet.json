@@ -1,0 +1,76 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "40591b12-84db-40d3-8bdd-f9fe6c3d4ee9"
+      }, {
+        "attributes" : {
+          "sectionColumnGutterWidth" : "0rem"
+        },
+        "id" : "ffd7e157-b428-4e15-9e40-d885a8612b25"
+      }, {
+        "attributes" : {
+          "singleButtonAlignment" : "right"
+        },
+        "id" : "f75be59a-a782-4877-bc88-fa7ff54cbe80"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "0rem",
+              "right" : "1.5rem",
+              "top" : "0rem"
+            }
+          },
+          "textAlign" : "right",
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "0bf99a1d-21f3-4adc-8ceb-e8542f7ef9cf"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "0rem",
+              "right" : "1.5rem",
+              "top" : "0rem"
+            }
+          }
+        },
+        "id" : "fe8b81cf-e372-4010-9e7a-9d4bf4d92c63"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "1.5rem",
+              "right" : "0rem",
+              "top" : "0rem"
+            }
+          },
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "9dfac0cc-6f86-4ff4-b5d3-c5128f07e27c"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "1.5rem",
+              "right" : "0rem",
+              "top" : "0rem"
+            }
+          }
+        },
+        "id" : "2085ff60-b1ac-4ab3-b333-a0122abb00f6"
+      } ]
+    }
+  },
+  "urlName" : "home"
+}

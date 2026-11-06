@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Decision_Site</name>
+        <label>Parent is a study site?</label>
+        <locationX>500</locationX>
+        <locationY>240</locationY>
+        <defaultConnectorLabel>Not ours</defaultConnectorLabel>
+        <rules>
+            <name>Decision_Site_Site</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Site.CareProgramId</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Run_Recalc</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>F-08 trigger (c): a regulatory checklist item on a Care Program Site was accepted / rejected / re-flagged. Runs EM_Onboarding_Recalc on the site&apos;s study so Regulatory Packet Complete and Missing Regulatory Documents follow the checklist. Not on create (the generator recalculates itself); honours Migration Mode.</description>
+    <environments>Default</environments>
+    <interviewLabel>EM Onboarding Checklist Sync {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EM Onboarding Checklist Sync</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Site</name>
+        <label>Parent site</label>
+        <locationX>250</locationX>
+        <locationY>120</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Decision_Site</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentRecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>CareProgramSite</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>CareProgramId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Site</targetReference>
+        </connector>
+        <filterFormula>(ISCHANGED({!$Record.IsAccepted}) || ISCHANGED({!$Record.Status}) || ISCHANGED({!$Record.IsRequired})) &amp;&amp; NOT({!$Setup.Migration_Mode__c.Is_Active__c})</filterFormula>
+        <object>DocumentChecklistItem</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Run_Recalc</name>
+        <label>Recalc the study</label>
+        <locationX>750</locationX>
+        <locationY>360</locationY>
+        <flowName>EM_Onboarding_Recalc</flowName>
+        <inputAssignments>
+            <name>in_CareProgramId</name>
+            <value>
+                <elementReference>Get_Site.CareProgramId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

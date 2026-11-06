@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Onboarding Items</masterLabel>
+    <description>Onboarding items for the Study page: Up next, open items first with completed collapsed (workstream tiles live in the header card since WU10-20 S4), one-click Complete via LDS (F-08 recalculates). GraphQL over study + site Tasks, no Apex. Phase 4 WU4.</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>CareProgram</object>
+            </objects>
+            <property name="title" type="String" label="Panel title" default="Onboarding Items"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

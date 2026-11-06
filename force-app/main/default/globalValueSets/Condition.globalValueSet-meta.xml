@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acne</fullName>
+        <default>false</default>
+        <label>Acne</label>
+    </customValue>
+    <customValue>
+        <fullName>ADHD</fullName>
+        <default>false</default>
+        <label>ADHD</label>
+    </customValue>
+    <customValue>
+        <fullName>Age-Related Macular Degeneration (AMD)</fullName>
+        <default>false</default>
+        <label>Age-Related Macular Degeneration (AMD)</label>
+    </customValue>
+    <customValue>
+        <fullName>Alopecia Areata</fullName>
+        <default>false</default>
+        <label>Alopecia Areata</label>
+    </customValue>
+    <customValue>
+        <fullName>Alzheimer&apos;s Disease</fullName>
+        <default>false</default>
+        <label>Alzheimer&apos;s Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>Androgenetic Alopecia</fullName>
+        <default>false</default>
+        <label>Androgenetic Alopecia</label>
+    </customValue>
+    <customValue>
+        <fullName>Ankylosing Spondylitis</fullName>
+        <default>false</default>
+        <label>Ankylosing Spondylitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Anxiety</fullName>
+        <default>false</default>
+        <label>Anxiety</label>
+    </customValue>
+    <customValue>
+        <fullName>Arthritis</fullName>
+        <default>false</default>
+        <label>Arthritis</label>
+    </customValue>
+    <customValue>
+        <fullName>Asthma</fullName>
+        <default>false</default>
+        <label>Asthma</label>
+    </customValue>
+    <customValue>
+        <fullName>Atopic Dermatitis</fullName>
+        <default>false</default>
+        <label>Atopic Dermatitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Basal Cell Carcinoma</fullName>
+        <default>false</default>
+        <label>Basal Cell Carcinoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Benign Prostatic Hyperplasia (BPH)</fullName>
+        <default>false</default>
+        <label>Benign Prostatic Hyperplasia (BPH)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bipolar Disorder</fullName>
+        <default>false</default>
+        <label>Bipolar Disorder</label>
+    </customValue>
+    <customValue>
+        <fullName>Bullous Pemphigoid</fullName>
+        <default>false</default>
+        <label>Bullous Pemphigoid</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Bronchitis</fullName>
+        <default>false</default>
+        <label>Chronic Bronchitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Cough</fullName>
+        <default>false</default>
+        <label>Chronic Cough</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)</fullName>
+        <default>false</default>
+        <label>Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Itching (Pruritus)</fullName>
+        <default>false</default>
+        <label>Chronic Itching (Pruritus)</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Kidney Disease</fullName>
+        <default>false</default>
+        <label>Chronic Kidney Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Pain</fullName>
+        <default>false</default>
+        <label>Chronic Pain</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Sinusitis</fullName>
+        <default>false</default>
+        <label>Chronic Sinusitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Chronic Spontaneous Urticaria (hives)</fullName>
+        <default>false</default>
+        <label>Chronic Spontaneous Urticaria (hives)</label>
+    </customValue>
+    <customValue>
+        <fullName>Cold Urticaria (hives)</fullName>
+        <default>false</default>
+        <label>Cold Urticaria (hives)</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact Dermatitis</fullName>
+        <default>false</default>
+        <label>Contact Dermatitis</label>
+    </customValue>
+    <customValue>
+        <fullName>COPD</fullName>
+        <default>false</default>
+        <label>COPD</label>
+    </customValue>
+    <customValue>
+        <fullName>Coronary Artery Disease</fullName>
+        <default>false</default>
+        <label>Coronary Artery Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>Crohn&apos;s Disease</fullName>
+        <default>false</default>
+        <label>Crohn&apos;s Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>Cutaneous Lupus Erythematosus</fullName>
+        <default>false</default>
+        <label>Cutaneous Lupus Erythematosus</label>
+    </customValue>
+    <customValue>
+        <fullName>Depression</fullName>
+        <default>false</default>
+        <label>Depression</label>
+    </customValue>
+    <customValue>
+        <fullName>Diabetes Mellitus</fullName>
+        <default>false</default>
+        <label>Diabetes Mellitus</label>
+    </customValue>
+    <customValue>
+        <fullName>Diabetic Peripheral Neuropathy</fullName>
+        <default>false</default>
+        <label>Diabetic Peripheral Neuropathy</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Eye Disease</fullName>
+        <default>false</default>
+        <label>Dry Eye Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>Eczema</fullName>
+        <default>false</default>
+        <label>Eczema</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Allergies</fullName>
+        <default>false</default>
+        <label>Environmental Allergies</label>
+    </customValue>
+    <customValue>
+        <fullName>Epilepsy</fullName>
+        <default>false</default>
+        <label>Epilepsy</label>
+    </customValue>
+    <customValue>
+        <fullName>Eosinophilic Esophagitis</fullName>
+        <default>false</default>
+        <label>Eosinophilic Esophagitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Allergies</fullName>
+        <default>false</default>
+        <label>Food Allergies</label>
+    </customValue>
+    <customValue>
+        <fullName>Gout</fullName>
+        <default>false</default>
+        <label>Gout</label>
+    </customValue>
+    <customValue>
+        <fullName>Headache / Migraines</fullName>
+        <default>false</default>
+        <label>Headache / Migraines</label>
+    </customValue>
+    <customValue>
+        <fullName>Hereditary Angioedema</fullName>
+        <default>false</default>
+        <label>Hereditary Angioedema</label>
+    </customValue>
+    <customValue>
+        <fullName>Hidradenitis Suppurativa (chronic boils)</fullName>
+        <default>false</default>
+        <label>Hidradenitis Suppurativa (chronic boils)</label>
+    </customValue>
+    <customValue>
+        <fullName>High Blood Pressure</fullName>
+        <default>false</default>
+        <label>High Blood Pressure</label>
+    </customValue>
+    <customValue>
+        <fullName>High Cholesterol</fullName>
+        <default>false</default>
+        <label>High Cholesterol</label>
+    </customValue>
+    <customValue>
+        <fullName>HIV</fullName>
+        <default>false</default>
+        <label>HIV</label>
+    </customValue>
+    <customValue>
+        <fullName>Hyperhidrosis (Excessive Sweating)</fullName>
+        <default>false</default>
+        <label>Hyperhidrosis (Excessive Sweating)</label>
+    </customValue>
+    <customValue>
+        <fullName>Insomnia</fullName>
+        <default>false</default>
+        <label>Insomnia</label>
+    </customValue>
+    <customValue>
+        <fullName>Lichen Planus</fullName>
+        <default>false</default>
+        <label>Lichen Planus</label>
+    </customValue>
+    <customValue>
+        <fullName>Lupus</fullName>
+        <default>false</default>
+        <label>Lupus</label>
+    </customValue>
+    <customValue>
+        <fullName>Movement Disorders</fullName>
+        <default>false</default>
+        <label>Movement Disorders</label>
+    </customValue>
+    <customValue>
+        <fullName>Multiple Sclerosis</fullName>
+        <default>false</default>
+        <label>Multiple Sclerosis</label>
+    </customValue>
+    <customValue>
+        <fullName>Myasthenia Gravis</fullName>
+        <default>false</default>
+        <label>Myasthenia Gravis</label>
+    </customValue>
+    <customValue>
+        <fullName>Narcolepsy / Idiopathic Hypersomnia</fullName>
+        <default>false</default>
+        <label>Narcolepsy / Idiopathic Hypersomnia</label>
+    </customValue>
+    <customValue>
+        <fullName>Nasal Polyps</fullName>
+        <default>false</default>
+        <label>Nasal Polyps</label>
+    </customValue>
+    <customValue>
+        <fullName>Obesity</fullName>
+        <default>false</default>
+        <label>Obesity</label>
+    </customValue>
+    <customValue>
+        <fullName>Obstructive Sleep Apnea (OSA)</fullName>
+        <default>false</default>
+        <label>Obstructive Sleep Apnea (OSA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Osteoarthritis</fullName>
+        <default>false</default>
+        <label>Osteoarthritis</label>
+    </customValue>
+    <customValue>
+        <fullName>Pediatric Eczema</fullName>
+        <default>false</default>
+        <label>Pediatric Eczema</label>
+    </customValue>
+    <customValue>
+        <fullName>Parkinson&apos;s Disease</fullName>
+        <default>false</default>
+        <label>Parkinson&apos;s Disease</label>
+    </customValue>
+    <customValue>
+        <fullName>PCOS</fullName>
+        <default>false</default>
+        <label>PCOS</label>
+    </customValue>
+    <customValue>
+        <fullName>Prurigo Nodularis</fullName>
+        <default>false</default>
+        <label>Prurigo Nodularis</label>
+    </customValue>
+    <customValue>
+        <fullName>Psoriasis</fullName>
+        <default>false</default>
+        <label>Psoriasis</label>
+    </customValue>
+    <customValue>
+        <fullName>Psoriatic Arthritis</fullName>
+        <default>false</default>
+        <label>Psoriatic Arthritis</label>
+    </customValue>
+    <customValue>
+        <fullName>Rheumatoid Arthritis</fullName>
+        <default>false</default>
+        <label>Rheumatoid Arthritis</label>
+    </customValue>
+    <customValue>
+        <fullName>Sjögren&apos;s Syndrome</fullName>
+        <default>false</default>
+        <label>Sjögren&apos;s Syndrome</label>
+    </customValue>
+    <customValue>
+        <fullName>Ulcerative Colitis</fullName>
+        <default>false</default>
+        <label>Ulcerative Colitis</label>
+    </customValue>
+    <customValue>
+        <fullName>Vasculitis Disorders</fullName>
+        <default>false</default>
+        <label>Vasculitis Disorders</label>
+    </customValue>
+    <customValue>
+        <fullName>Vitiligo</fullName>
+        <default>false</default>
+        <label>Vitiligo</label>
+    </customValue>
+    <customValue>
+        <fullName>Warts</fullName>
+        <default>false</default>
+        <label>Warts</label>
+    </customValue>
+    <description>Recruitment condition/indication value set — 65 values preserved byte-for-byte from GHL/Bre&apos;s field sheet (design principle 6: legacy values preserved) + 4 onboarding values added 2026-09-23 for the Manhattan pilot studies (WU10-16), spelled as Grace&apos;s Opportunity Indication values: Androgenetic Alopecia, Atopic Dermatitis, Chronic Inflammatory Demyelinating Polyneuropathy (CIDP), Warts. Deliberately separate from Grace&apos;s Opportunity Indication picklist. Used on Patient HealthCondition, Opportunity (RT Patient_Recruitment), Study (CareProgram) and intake Lead fields from Phase 1.</description>
+    <masterLabel>Condition</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

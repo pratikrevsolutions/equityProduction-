@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Portal Milestones</masterLabel>
+    <description>EM Study Portal (LWR) wrapper for c/emUpcomingMilestones - 60-day milestone timeline (target activation, SIV, sponsor activation, next action) + recent awards. Site-only targets. Phase 5, 2026-09-16.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="title" type="String" label="Title" default="Upcoming milestones"/>
+            <property name="horizonDays" type="Integer" label="Horizon (days)" default="60"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,26 @@
+<template>
+    <header class="bar" style={barStyle}>
+        <a class="brand" href={homeHref}>
+            <template lwc:if={showLogo}><img class="logo" src={logoSrc} alt="Equity Medical"/></template>
+            <span class="brand-text">
+                <span class="title">{siteTitle}</span>
+                <template lwc:if={hasTagline}><span class="tagline">{tagline}</span></template>
+            </span>
+        </a>
+        <button class="burger" onclick={toggleMenu} aria-label="Menu">
+            <lightning-icon icon-name={menuIcon} size="x-small"></lightning-icon>
+        </button>
+        <nav class={navClass}>
+            <template for:each={links} for:item="l">
+                <a key={l.key} class={l.className} style={l.style} href={l.href} onclick={closeMenu}>{l.label}</a>
+            </template>
+            <template lwc:if={showUser}>
+                <span class="user">
+                    <span class="avatar">{userInitial}</span>
+                    <span class="name">{userName}</span>
+                    <a class="logout" href={logoutHref}>{logoutLabel}</a>
+                </span>
+            </template>
+        </nav>
+    </header>
+</template>

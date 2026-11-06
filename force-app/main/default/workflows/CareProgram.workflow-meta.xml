@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>EM_Greenlight_Set_Date</fullName>
+        <description>EM_Internal_Greenlight final approval: stamps the greenlight date.</description>
+        <field>Internal_Greenlight_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>EM Greenlight Set Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EM_Greenlight_Set_True</fullName>
+        <description>EM_Internal_Greenlight final approval: the only writer of Internal Greenlight (F-08 never stamps it by hand).</description>
+        <field>Internal_Greenlight__c</field>
+        <literalValue>1</literalValue>
+        <name>EM Greenlight Set True</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>false</isExposed>
+    <masterLabel>EM Onboarding Tiles</masterLabel>
+    <description>Per-workstream onboarding tiles (done/total, overdue) rendered inside emStudyCard on the Study page header. GraphQL over study + site Tasks, read-only, no Apex. WU10-20 S4.</description>
+</LightningComponentBundle>

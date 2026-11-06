@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "My Work",
+  "contentBody" : {
+    "activeViewId" : "My_Work",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-my-work",
+    "urlPrefix" : "my-work"
+  },
+  "urlName" : "my-work"
+}

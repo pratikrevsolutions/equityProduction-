@@ -1,0 +1,47 @@
+<template>
+    <div class="card">
+        <div class="head">
+            <div class="title"><lightning-icon icon-name="standard:task" size="small" class="slds-m-right_x-small"></lightning-icon>{title}</div>
+            <span class="badge" title={version}>{badge}</span>
+        </div>
+        <template lwc:if={errorText}><div class="slds-text-color_error">{errorText}</div></template>
+        <template lwc:if={hasOverdue}>
+            <div class="bucket-head overdue">Overdue · {overdueCount}</div>
+            <ul class="rows"><template for:each={overdue} for:item="r">
+                <li key={r.id} class="row">
+                    <template lwc:if={r.blocked}><span class="tick locked" title="Waiting for a prerequisite item"><lightning-icon icon-name="utility:lock" size="xx-small"></lightning-icon></span></template>
+                    <template lwc:else><button class="tick" title="Mark complete" data-id={r.id} onclick={handleComplete} disabled={r.isBusy}><lightning-icon icon-name="utility:check" size="xx-small"></lightning-icon></button></template>
+                    <div class="main"><a href={r.url} class="subject">{r.subject}</a><template lwc:if={r.required}><span class="req">Required</span></template>
+                        <div class="meta"><a href={r.studyUrl} class="study">{r.studyName}</a><template lwc:if={r.site}><span class="site">{r.site}</span></template><span class="ws">{r.workstream}</span></div></div>
+                    <span class={r.dueClass}>{r.dueLabel}</span>
+                </li></template></ul>
+            <template lwc:if={overdueMore}><button class="link" data-bucket="overdue" onclick={handleExpand}>{overdueMore}</button></template>
+        </template>
+        <template lwc:if={hasWeek}>
+            <div class="bucket-head week">Due this week · {weekCount}</div>
+            <ul class="rows"><template for:each={thisWeek} for:item="r">
+                <li key={r.id} class="row">
+                    <template lwc:if={r.blocked}><span class="tick locked" title="Waiting for a prerequisite item"><lightning-icon icon-name="utility:lock" size="xx-small"></lightning-icon></span></template>
+                    <template lwc:else><button class="tick" title="Mark complete" data-id={r.id} onclick={handleComplete} disabled={r.isBusy}><lightning-icon icon-name="utility:check" size="xx-small"></lightning-icon></button></template>
+                    <div class="main"><a href={r.url} class="subject">{r.subject}</a><template lwc:if={r.required}><span class="req">Required</span></template>
+                        <div class="meta"><a href={r.studyUrl} class="study">{r.studyName}</a><template lwc:if={r.site}><span class="site">{r.site}</span></template><span class="ws">{r.workstream}</span></div></div>
+                    <span class={r.dueClass}>{r.dueLabel}</span>
+                </li></template></ul>
+            <template lwc:if={weekMore}><button class="link" data-bucket="week" onclick={handleExpand}>{weekMore}</button></template>
+        </template>
+        <template lwc:if={hasLater}>
+            <button class="link" onclick={handleToggleLater}>{laterToggle}</button>
+            <template lwc:if={laterVisible}>
+                <ul class="rows"><template for:each={later} for:item="r">
+                    <li key={r.id} class="row">
+                        <template lwc:if={r.blocked}><span class="tick locked"><lightning-icon icon-name="utility:lock" size="xx-small"></lightning-icon></span></template>
+                        <template lwc:else><button class="tick" title="Mark complete" data-id={r.id} onclick={handleComplete} disabled={r.isBusy}><lightning-icon icon-name="utility:check" size="xx-small"></lightning-icon></button></template>
+                        <div class="main"><a href={r.url} class="subject">{r.subject}</a><template lwc:if={r.required}><span class="req">Required</span></template>
+                            <div class="meta"><a href={r.studyUrl} class="study">{r.studyName}</a><template lwc:if={r.site}><span class="site">{r.site}</span></template><span class="ws">{r.workstream}</span></div></div>
+                        <span class={r.dueClass}>{r.dueLabel}</span>
+                    </li></template></ul>
+            </template>
+        </template>
+        <template lwc:if={showEmpty}><div class="empty"><lightning-icon icon-name="utility:success" size="small" class="slds-m-right_x-small"></lightning-icon>Nothing open on your plate — every onboarding item assigned to you is done.</div></template>
+    </div>
+</template>

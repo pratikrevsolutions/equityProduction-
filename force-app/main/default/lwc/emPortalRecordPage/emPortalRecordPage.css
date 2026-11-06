@@ -1,0 +1,13 @@
+.wrap { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+.head { margin-bottom: 1rem; }
+.back { font-size: .8125rem; text-decoration: none; }
+.title-row { display: flex; align-items: center; gap: .75rem; margin-top: .5rem; }
+.icon { width: 2.25rem; height: 2.25rem; border-radius: .25rem; background: #0b2a4a; }
+.eyebrow { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: #54698d; }
+.title { font-size: 1.375rem; font-weight: 700; color: #0b2a4a; line-height: 1.2; }
+.card { background: #fff; border: 1px solid #dddbda; border-radius: .5rem; padding: 1rem; margin-bottom: 1rem; }
+.list-title { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; display: flex; align-items: center; justify-content: space-between; }
+.new-btn { margin-left: auto; }
+.count { font-weight: 400; color: #54698d; margin-left: .25rem; }
+.table-wrap { overflow-x: auto; }
+.more, .empty { font-size: .8125rem; color: #54698d; margin-top: .5rem; }

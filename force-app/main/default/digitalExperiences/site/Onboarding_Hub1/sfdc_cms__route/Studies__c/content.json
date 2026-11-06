@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Studies",
+  "contentBody" : {
+    "activeViewId" : "Studies",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-studies",
+    "urlPrefix" : "studies"
+  },
+  "urlName" : "studies"
+}

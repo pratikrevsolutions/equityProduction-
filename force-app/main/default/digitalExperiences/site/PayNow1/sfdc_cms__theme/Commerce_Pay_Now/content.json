@@ -1,0 +1,22 @@
+{
+  "type" : "sfdc_cms__theme",
+  "title" : "Commerce Pay Now",
+  "contentBody" : {
+    "activeBrandingSetId" : "Commerce_Pay_Now",
+    "definitionName" : "pay-now-commerce",
+    "layouts" : [ {
+      "layoutId" : "externalLayout",
+      "layoutType" : "External"
+    }, {
+      "layoutId" : "snaThemeLayout",
+      "layoutType" : "ServiceNotAvailable"
+    }, {
+      "layoutId" : "commerceLayout",
+      "layoutType" : "Inner"
+    }, {
+      "layoutId" : "myAccountLayout",
+      "layoutType" : "MyAccount"
+    } ]
+  },
+  "urlName" : "commerce-pay-now"
+}

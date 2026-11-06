@@ -1,0 +1,6 @@
+{
+  "apiName" : "Order_Summary_List",
+  "type" : "sfdc_cms__route",
+  "path" : "routes",
+  "contentKey" : "MCCCSMYFJLZBFIJKN2J7XS66BFEU"
+}

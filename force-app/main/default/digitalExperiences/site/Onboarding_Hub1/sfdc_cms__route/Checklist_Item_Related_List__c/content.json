@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Checklist Item Related List",
+  "contentBody" : {
+    "activeViewId" : "Checklist_Item_Related_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "relatedlist-0dd",
+    "urlPrefix" : "checklistitem"
+  },
+  "urlName" : "checklistitem-related-list"
+}

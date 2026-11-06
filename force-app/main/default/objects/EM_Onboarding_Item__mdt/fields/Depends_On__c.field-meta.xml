@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Depends_On__c</fullName>
+    <description>Task gating: Item Key of the single prerequisite item (e.g. CB-01). The generated task carries it as EM_Blocked_By__c until that item completes; blocked items cannot be hand-completed and are skipped as Next Action. Blank = no gate. Scenarios from Nicholas (P4-7) land here as data.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Depends On</label>
+    <length>40</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

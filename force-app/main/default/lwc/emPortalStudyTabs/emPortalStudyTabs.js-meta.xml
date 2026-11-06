@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Portal Study Tabs</masterLabel>
+    <description>Onboarding Hub (LWR) study page body, two tabs: Details (6 key fields) and Care Program Team Members (that related list only, with a New button).</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="recordId" type="String" label="Record Id" default="{!recordId}"/>
+            <!-- Kept for compatibility with the existing page placement (Salesforce blocks removing a bound
+                 design property) - the component no longer reads any of these; the list shown is hardcoded. -->
+            <property name="itemsTitle" type="String" label="(unused) Onboarding Items title" default="Onboarding Items"/>
+            <property name="maxLists" type="Integer" label="(unused) Max related lists" default="6"/>
+            <property name="relatedLists" type="String" label="(unused) Related list ids" default="CareProgramTeamMembers"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

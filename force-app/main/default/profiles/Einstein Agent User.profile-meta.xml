@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>EM_Study_Onboarding</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AIWorkbench</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AdvancedTherapyManagement</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AgentforceStudio</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AllTabSet</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AlmDevops</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AppLauncher</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Approvals</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__CommerceStarter</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Content</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__DigitalWallet</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__EasyAccounts</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__EasyAutomation</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__EasyConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__EasyContacts</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__EasyHome</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__EasySales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__EasyService</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ExpressionSetConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__FlowsApp</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__IndustriesEcm</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__IndustriesEpc</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningInstrumentation</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningScheduler</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__MSJApp</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__OnlineSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__PatientServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Personalization</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesCloudMobile</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Shield</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SiteManagement</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sites</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <classAccesses>
+        <apexClass>ChangePasswordController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChangePasswordControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLandingController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLandingControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLoginController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLoginControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegConfirmController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegConfirmControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EM_BusinessHoursCheck</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EM_BusinessHoursCheck_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EM_TeamTaskAssignee</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>EM_TeamTaskAssignee_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ForgotPasswordController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ForgotPasswordControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MicrobatchSelfRegController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MicrobatchSelfRegControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MyProfilePageController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MyProfilePageControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SiteLoginController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SiteLoginControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SiteRegisterController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SiteRegisterControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <custom>false</custom>
+    <externalDataSourceAccesses>
+        <enabled>false</enabled>
+        <externalDataSource>Google_Drive</externalDataSource>
+    </externalDataSourceAccesses>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Number_Route__mdt.Agent_Username__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Number_Route__mdt.Business_Hours_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Number_Route__mdt.Owner_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Number_Route__mdt.Team__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Applies_When__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Depends_On__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Due_Offset_Days__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Evidence_Field__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Evidence_Value__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Instructions__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Is_Required__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Item_Key__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Owner_Role__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Path_Step__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Per_Site__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Portal_Form__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Sequence__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Subject__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Item__mdt.Workstream__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Owner_Default__mdt.Default_Username__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Owner_Default__mdt.Fallback_To_Study_Owner__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Owner_Default__mdt.Notes__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Owner_Default__mdt.Owner_Role__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_Owner_Default__mdt.Workstream__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_SLA__mdt.Active__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_SLA__mdt.Is_Placeholder__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_SLA__mdt.Path_Step__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_SLA__mdt.Reason_Text__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_SLA__mdt.Rule_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_SLA__mdt.Threshold_Days__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>EM_Onboarding_SLA__mdt.Threshold_Pct__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Knowledge__kav.ArticleBody__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountBrand-Account Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountPlan-Account Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountPlanObjective-Account Plan Objective Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountPlanObjectiveMeasure-Account Plan Objective Measure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Accreditation-Accreditation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlan-Action Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanItemDependency-Action Plan Item Dependency Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplate-Action Plan Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateItem-Action Plan Template Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateItemValue-Action Plan Template Item Value Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateVersion-Action Plan Template Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlnTmplItmDependency-Action Plan Template Item Dependency Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActivityTiming-Activity Timing Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Address-Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AdvTherapyFieldOptOverride-Advanced Therapy Field Optionality Override Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AllergyIntolerance-Allergy Intolerance Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AlternativePaymentMethod-Alternative Payment Method Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ApiAnomalyEventStore-API Anomaly Event Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AppointmentInvitation-Appointment Invitation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AppointmentInvitee-Appointment Invitee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentIndicatorDefinition-Assessment Indicator Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentTask-Assessment Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentTaskContentDocument-Assessment Task Content Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentTaskDefinition-Assessment Task Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetRelationship-Asset Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssignedResource-Assigned Resource Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssociatedLocation-Associated Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorNote-Author Note Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationForm-Authorization Form Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationFormConsent-Authorization Form Consent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationFormDataUse-Authorization Form Data Use Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Award-Award Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BoardCertification-Board Certification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BusinessBrand-Business Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BusinessLicense-Business License Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BusinessMilestone-Business Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BuyerAccount-Buyer Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BuyerGroupRelatedObject-Buyer Group Related Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalcMatrixColumnRange-Calculation Matrix Column Range Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalcProcStepRelationship-Expression Set Step Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrix-Decision Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixColumn-Calculation Matrix Column Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixRow-Calculation Matrix Row Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixVersion-Calculation Matrix Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedure-Calculation Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureStep-Calculation Procedure Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureVariable-Calculation Procedure Variable Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureVersion-Calculation Procedure Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CardPaymentMethod-Card Payment Method Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBarrier-Care Barrier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBarrierDeterminant-Care Barrier Determinant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBarrierType-Care Barrier Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBenefitVerifyRequest-Care Benefit Verify Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBenefitVerifySettings-Care Benefit Verification Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareDeterminant-Care Determinant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareDeterminantType-Care Determinant Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareInterventionType-Care Intervention Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareLimitType-Care Limit Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareObservation-Care Observation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareObservationComponent-Care Observation Component Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePerformer-Care Performer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePgmEnrolleeWkOrdStep-Care Program Enrollee Work Order Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePgmEnrolleeWorkOrder-Care Program Enrollee Work Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePgmProvHealthcareProvider-Care Program Healthcare Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePreauth-Care Preauth Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePreauthItem-Care Preauth Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgram-Care Program Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramCampaign-Care Program Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramDetail-Care Program Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEligibilityRule-Care Program Eligibility Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEnrollee-Care Program Enrollee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEnrolleeProduct-Care Program Enrollee Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEnrollmentCard-Care Program Enrollment Card Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramGoal-Care Program Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramProduct-Care Program Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramProvider-Care Program Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramSite-Care Program Site Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramSiteContract-Care Program Site Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramTeamMember-Care Program Team Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderAdverseAction-Care Provider Adverse Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderAfflRoleConfig-Care Provider Affiliation Role Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderFacilitySpecialty-Care Provider Facility Specialty Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderSearchConfig-Care Provider Search Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderSearchableField-Care Provider Searchable Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRegisteredDevice-Care Registered Device Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequest-Care Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestConfiguration-Care Request Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestItem-Care Request Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareService-Care Service Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareSiteIstgrSearchableFld-Care Site Investigator Searchable Fields Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareSpecialty-Care Specialty Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareSpecialtyTaxonomy-Care Specialty Taxonomy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareSystemFieldMapping-Care System Field Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareTask-Care Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareTaskDetail-Care Task Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareTaxonomy-Care Taxonomy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseMilestone-Case Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalAlert-Clinical Alert Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalDetectedIssue-Clinical Detected Issue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalDetectedIssueDetail-Clinical Detected Issue Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounter-Clinical Encounter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterDiagnosis-Clinical Encounter Diagnosis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterFacility-Clinical Encounter Facility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterIdentifier-Clinical Encounter Identifier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterProvider-Clinical Encounter Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterReason-Clinical Encounter Reason Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterSvcRequest-Clinical Encounter Svc Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalServiceRequest-Clinical Service Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalServiceRequestDetail-Clinical Service Request Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CodeSet-Code Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CodeSetBundle-Code Set Bundle Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointAddress-Contact Point Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointTypeConsent-Contact Point Type Consent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentLink-Content Link Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentSource-Content Source Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentVersion-Content Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContractLineItem-Contract Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CoverageBenefit-Coverage Benefit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CoverageBenefitItem-Coverage Benefit Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CoverageBenefitItemLimit-Coverage Benefit Item Limit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CredentialStuffingEventStore-Credential Stuffing Event Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CreditMemo-Credit Memo Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CreditMemoLine-Credit Memo Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CustodyChainEntry-Custody Chain Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CustodyItem-Custody Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CustodyVerfcTypeOverride-Custody Verification Type Override Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer-Customer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataLakeObjectInstance-Data Lake Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataUseLegalBasis-Data Use Legal Basis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataUsePurpose-Data Use Purpose Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DiagnosticSummary-Diagnostic Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DiagnosticSummaryDetail-Diagnostic Summary Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DigitalVerfSetupDetail-Digital Verification Setup Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DigitalVerification-Digital Verification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DigitalVerificationSetup-Digital Verification Setup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DigitalWallet-Digital Wallet Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DocumentCategory-Document Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DocumentChecklistItem-Document Checklist Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DocumentType-Document Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordItem-Duplicate Record Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EM_Number_Route__mdt-EM Number Route Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EM_Onboarding_Item__mdt-EM Onboarding Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EM_Onboarding_Owner_Default__mdt-EM Onboarding Owner Default Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EM_Onboarding_SLA__mdt-EM Onboarding SLA Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmailMessage-Email Message Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EngagementChannelType-Engagement Channel Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EngagementInteraction-Engagement Interaction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EngagementTopic-Engagement Topic Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EnrollmentEligibilityCriteria-Enrollment Eligibility Criteria Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Entitlement-Entitlement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EntityMilestone-Object Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ExpressionSet-Expression Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ExpressionSetVersion-Expression Set Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FlowRecord-Flow Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FulfillmentOrder-Fulfillment Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FulfillmentOrderItemAdjustment-Fulfillment Order Item Adjustment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FulfillmentOrderItemTax-Fulfillment Order Item Tax Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GenericVisitTask-Generic Visit Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GenericVisitTaskContext-Generic Visit Task Context Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GeoCountry-Geo Country Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GnrcVstKeyPerformanceInd-Generic Visit Key Performance Indicator Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GnrcVstTaskContextRelation-Generic Visit Task Context Relation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GoalAssignmentDetail-Goal Assignment Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GuestUserAnomalyEventStore-Guest User Anomaly Event Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthCondition-Health Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthConditionDetail-Health Condition Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthRiskEvalDetail-Health Risk Evaluation Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthRiskEvalOutcome-Health Risk Evaluation Outcome Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthRiskEvaluation-Health Risk Evaluation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthScore-Health Score Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareFacility-Healthcare Facility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareFacilityNetwork-Healthcare Facility Network Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcarePayerNetwork-Healthcare Payer Network Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcarePractitionerFacility-Healthcare Practitioner Facility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProvider-Healthcare Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProviderNpi-Healthcare Provider NPI Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProviderService-Healthcare Provider Service Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProviderSpecialty-Healthcare Provider Specialty Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProviderTaxonomy-Healthcare Provider Taxonomy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareServiceDetail-Healthcare Service Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HlthCareProvTreatedCondition-Healthcare Provider Treated Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Identifier-Identifier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>IframeWhiteListUrl-Trusted Domain for Inline Frames Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Individual Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InterestTag-Interest Tag Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Invoice-Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InvoiceAddressGroup-Invoice Address Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InvoiceLine-Invoice Line Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Knowledge__kav-Knowledge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LiveChatTranscriptActive-Chat Transcript %28In Progress%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LiveChatTranscriptWaiting-Chat Transcript %28Waiting%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Location-Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LoginAnomalyEventStore-Login Anomaly Event Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Medication-Medication Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationAdministration-Medication Administration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationAdministrationDtl-Medication Administration Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationDispense-Medication Dispense Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationRequest-Medication Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationStatement-Medication Statement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationStatementDetail-Medication Statement Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MemberPlan-Member Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MemberPlanMedicationStmt-Member Plan Medication Statement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OperatingHours-Operating Hours Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OperatingHoursHoliday-Operating Hours Holiday Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderAdjustmentGroup-Order Adjustment Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderAdjustmentGroupSummary-Order Adjustment Group Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderDeliveryGroup-Order Delivery Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderDeliveryGroupSummary-Order Delivery Group Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderDeliveryMethod-Order Delivery Method Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItemAdjustmentLineItem-Order Product Adjustment Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItemAdjustmentLineSummary-Order Product Adjustment Line Item Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItemSummary-Order Product Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItemSummaryChange-Order Product Summary Change Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItemSummaryRelationship-Order Product Summary Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItemTaxLineItem-Order Product Tax Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItemTaxLineItemSummary-Order Product Tax Line Item Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderPaymentSummary-Order Payment Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderPaymentSummaryReference-Order Payment Summary Reference Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderSummary-Order Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderSummaryRelationship-Order Summary Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OtherComponentTask-Other Component Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PartyPublication-Party Publication Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientHealthReaction-Patient Health Reaction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientImmunization-Patient Immunization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientImmunizationProtocol-Patient Immunization Protocol Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientMedicalProcedure-Patient Medical Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientMedicalProcedureDetail-Patient Medical Procedure Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientMedicationDosage-Patient Medication Dosage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Payment-Payment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentAuthAdjustment-Payment Authorization Adjustment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentAuthorization-Payment Authorization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentGateway-Payment Gateway Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentGatewayLog-Payment Gateway Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentGroup-Payment Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PaymentLineInvoice-Payment Line Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonEducation-Person Education Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonEmployment-Person Employment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonLanguage-Person Language Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonLifeEvent-Person Life Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonName-Person Name Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PlanBenefit-Plan Benefit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PlanBenefitItem-Plan Benefit Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pricebook2-Price Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-Price Book Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProblemDefRelationship-Problem Definition Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProblemDefinition-Problem Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProblemGoalDefinition-Problem Goal Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProcessException-Process Exception Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProductRequest-Product Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProductRequestLineItem-Product Request Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkill-Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillUser-Skill User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProviderAffiliation-Provider Affiliation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProviderSearchSyncLog-Provider Search Sync Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PurchaserPlan-Purchaser Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PurchaserPlanAssn-Purchaser Plan Association Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PurchaserPlanCareProgram-Purchaser Plan Care Program Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuickText-Quick Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-Quote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuoteLineItem-Quote Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ReceivedDocument-Received Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ReceivedDocumentType-Received Document Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>RecurrenceSchedule-Recurrence Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Refund-Refund Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>RefundLinePayment-Refund Line Payment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ReportAnomalyEventStore-Report Anomaly Event Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResearchStudy-Study Record Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResourceAbsence-Resource Absence Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResourcePreference-Resource Preference Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SalesChannel-Sales Channel Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SalesforceContract-Salesforce Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SalesforceInvoice-Salesforce Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScoreCategory-Score Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Seller-Seller Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceAppointment-Service Appointment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceAppointmentGroup-Service Appointment Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceAppointmentShift-Service Appointment Shift Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceContract-Service Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceResource-Service Resource Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceResourceSkill-Service Resource Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceTerritory-Service Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceTerritoryMember-Service Territory Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceTerritoryRelationship-Service Territory Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SessionHijackingEventStore-Session Hijacking Event Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Shift-Shift Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ShiftWorkTopic-Shift Work Topic Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SkillRequirement-Skill Requirement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Specimen-Specimen Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TagCategory-Tag Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TagCategoryAssignment-Tag Category Assignment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Team-Team Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TeamMember-Team Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ThreatDetectionFeedback-Threat Detection Feedback Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TimeSlot-Time Slot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UIObjectRelationConfig-UI Object Relation Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UIObjectRelationFieldConfig-UI Object Relation Field Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UnitOfMeasure-Unit of Measure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UniversalAnomalyEventStore-Universal Anomaly Event Store Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvAccount-User Provisioning Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvisioningLog-User Provisioning Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvisioningRequest-User Provisioning Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Visit-Visit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>VisitedParty-Visited Party Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Visitor-Visitor Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Waitlist-Waitlist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadge-Badge Received Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadgeDefinition-Badge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-Work Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkPlan-Work Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkPlanTemplate-Work Plan Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkPlanTemplateEntry-Work Plan Template Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkProcedure-Work Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkProcedureStep-Work Procedure Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkStep-Work Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkStepTemplate-Work Step Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkType-%5F%5FMISSING LABEL%5F%5F PropertyFile - val WorkType not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeExtension-Work Type Extension Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeGroup-Work Type Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeGroupMember-Work Type Group Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeStep-Work Type Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeStepLdTimeOvride-Work Type Step Lead Time Override Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeSvcTerrSchdPrio-Work Type Service Territory Scheduling Priority Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>metacapi__CAPI_Event_Queue__c-metacapi__CAPI Event Queue Layout</layout>
+    </layoutAssignments>
+    <pageAccesses>
+        <apexPage>AnswersHome</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>BandwidthExceeded</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ChangePassword</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesLanding</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesLogin</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesSelfReg</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesSelfRegConfirm</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>CommunitiesTemplate</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Exception</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>FileNotFound</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ForgotPassword</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ForgotPasswordConfirm</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>IdeasHome</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>InMaintenance</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>MicrobatchSelfReg</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>MyProfilePage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SiteLogin</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SiteRegister</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SiteRegisterConfirm</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>SiteTemplate</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>StdExceptionTemplate</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Unauthorized</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>UnderConstruction</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <tabVisibilities>
+        <tab>Knowledge__kav</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <userLicense>Einstein Agent</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiEnabled</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ApiUserOnly</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>DigitalAgentUser</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunFlow</name>
+    </userPermissions>
+</Profile>

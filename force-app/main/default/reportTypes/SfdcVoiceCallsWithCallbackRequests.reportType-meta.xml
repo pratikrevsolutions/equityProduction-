@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>VoiceCall</baseObject>
+    <category>cases</category>
+    <deployed>true</deployed>
+    <description>Provides insights into customer callback requests.</description>
+    <join>
+        <join>
+            <outerJoin>true</outerJoin>
+            <relationship>VoiceCall</relationship>
+        </join>
+        <outerJoin>false</outerJoin>
+        <relationship>ContactRequest</relationship>
+    </join>
+    <label>Voice Calls with Callback Requests</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>VoiceCall</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CallStartDateTime</field>
+            <table>VoiceCall</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FromPhoneNumber</field>
+            <table>VoiceCall</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ToPhoneNumber</field>
+            <table>VoiceCall</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>VendorType</field>
+            <table>VoiceCall</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CallQueuedDateTime</field>
+            <table>VoiceCall</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DisconnectReason</field>
+            <table>VoiceCall</table>
+        </columns>
+        <masterLabel>Voice Calls</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>VoiceCall.ContactRequest</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>VoiceCall.ContactRequest</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AvailableCallbackAttempts</field>
+            <table>VoiceCall.ContactRequest</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DelayBetweenCallbackAttempts</field>
+            <table>VoiceCall.ContactRequest</table>
+        </columns>
+        <masterLabel>Contact Requests</masterLabel>
+    </sections>
+</ReportType>

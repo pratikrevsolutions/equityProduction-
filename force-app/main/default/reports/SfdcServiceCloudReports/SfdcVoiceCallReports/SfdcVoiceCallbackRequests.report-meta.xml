@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>ContactRequest.Id:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Total number of customer callback requests.</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Callback Requests</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$FromPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$ToPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall.ContactRequest$Id</field>
+    </columns>
+    <columns>
+        <field>VoiceCall.ContactRequest$Name</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallQueuedDateTime</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$DisconnectReason</field>
+    </columns>
+    <columns>
+        <field>VoiceCall.ContactRequest$AvailableCallbackAttempts</field>
+    </columns>
+    <columns>
+        <field>VoiceCall.ContactRequest$DelayBetweenCallbackAttempts</field>
+    </columns>
+    <description>Provides insights into the volume of callback requests.</description>
+    <filter>
+        <criteriaItems>
+            <column>VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>VoiceCall$CallStartDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Voice Callback Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCallsWithCallbackRequests__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

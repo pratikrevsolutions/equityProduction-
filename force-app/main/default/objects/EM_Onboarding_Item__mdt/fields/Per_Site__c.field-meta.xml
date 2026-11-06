@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Per_Site__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Generate one Task per CareProgramSite (WhatId = the site) instead of one per study — the D-4 multi-site rule.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Per Site</label>
+    <type>Checkbox</type>
+</CustomField>

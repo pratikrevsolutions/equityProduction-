@@ -1,0 +1,83 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Studies",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\": \"a0b4ea5d-0ec0-4e12-996b-84eeb3ccf53a\", \"columns\": [{\"UUID\": \"cbff12c6-6249-4e2d-bae4-63407a4db3d5\", \"columnName\": \"Column 1\", \"columnKey\": \"col1\", \"columnWidth\": \"12\", \"seedComponents\": null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backLabel" : "Home",
+                "backPath" : "/",
+                "dxpStyle" : { },
+                "iconName" : "standard:care_plan",
+                "subtitle" : "Every study at a glance",
+                "title" : "Studies"
+              },
+              "definition" : "c:emPortalPageBanner",
+              "id" : "6742f037-ed45-4daa-8bb2-eff8af817911",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:emPortalStudyPortfolio",
+              "id" : "d06888ae-1bb0-417e-991f-d5d98fe57ec0",
+              "type" : "component"
+            } ],
+            "id" : "cbff12c6-6249-4e2d-bae4-63407a4db3d5",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "a0b4ea5d-0ec0-4e12-996b-84eeb3ccf53a",
+          "type" : "component"
+        } ],
+        "id" : "77beaf85-62da-42c3-8db0-edbceab60ba7",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Studies",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "901c0445-7873-4164-a71c-4c5d8b18bda8",
+          "type" : "component"
+        } ],
+        "id" : "53c1c953-7bda-44fd-998e-d09ece06ce5d",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "032d6ae5-ae47-4edc-8225-754b8d447fb9",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-studies"
+  },
+  "urlName" : "studies"
+}

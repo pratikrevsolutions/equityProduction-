@@ -1,0 +1,110 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Scoped Header and Footer",
+  "contentBody" : {
+    "component" : {
+      "attributes" : {
+        "hideThemeFooter" : false,
+        "showThemeFooterAtBottom" : true,
+        "stickyThemeHeader" : false
+      },
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"c5a61518-99ae-4370-b171-7151bb23e335\",\"columns\":[{\"UUID\":\"62f2b56b-3272-4c89-8b26-0ca1400ef3f6\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "accentColor" : "#0b5cab",
+                "dxpStyle" : { },
+                "hideLogo" : false,
+                "hideUser" : false,
+                "homePath" : "/",
+                "logoUrl" : "",
+                "logoutLabel" : "Log out",
+                "navLinks" : "Home|/;Studies|/studies;My work|/my-work;Milestones|/milestones",
+                "siteTitle" : "Onboarding Hub",
+                "tagline" : "Equity Medical study onboarding"
+              },
+              "definition" : "c:emPortalHeader",
+              "id" : "a368d36e-c9ab-48ca-94eb-4519247c0154",
+              "type" : "component"
+            } ],
+            "id" : "62f2b56b-3272-4c89-8b26-0ca1400ef3f6",
+            "name" : "headerSection",
+            "title" : "Theme Header",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "c5a61518-99ae-4370-b171-7151bb23e335",
+          "type" : "component"
+        } ],
+        "id" : "95471fc9-79ad-4ac6-b47b-7979042dfb3c",
+        "name" : "header",
+        "title" : "Theme Header",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"d30774cb-0797-4b15-b4ac-5349ec0a2db7\",\"columns\":[{\"UUID\":\"9df3e967-79ed-4e33-9d08-96ecf02bf4ae\",\"columnName\":\"Column 1\",\"columnKey\":\"footerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "environmentNote" : "",
+                "hideYear" : false,
+                "links" : "",
+                "orgName" : "Equity Medical",
+                "supportEmail" : "",
+                "supportLabel" : "Support",
+                "text" : "Study onboarding portal"
+              },
+              "definition" : "c:emPortalFooter",
+              "id" : "826cb544-5872-4029-acae-3c7e54d9acdc",
+              "type" : "component"
+            } ],
+            "id" : "9df3e967-79ed-4e33-9d08-96ecf02bf4ae",
+            "name" : "footerSection",
+            "title" : "Theme Footer",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d30774cb-0797-4b15-b4ac-5349ec0a2db7",
+          "type" : "component"
+        } ],
+        "id" : "c9a60223-2975-4ab7-8e45-326706bdb763",
+        "name" : "footer",
+        "title" : "Theme Footer",
+        "type" : "region"
+      } ],
+      "definition" : "community_byo:scopedHeaderAndFooter",
+      "id" : "97d15b32-9c31-4474-a043-9f538ba48ec1",
+      "type" : "component"
+    }
+  },
+  "urlName" : "scoped-header-and-footer"
+}

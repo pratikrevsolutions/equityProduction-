@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Finance/management budget-field layer — added alongside another group, never alone (§9.2.1).</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>EM Finance Budget</label>
+    <permissionSets>EM_PS_Budget_Fields</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

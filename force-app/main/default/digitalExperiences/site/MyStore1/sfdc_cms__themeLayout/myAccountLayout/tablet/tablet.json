@@ -1,0 +1,39 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "My Account Layout",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "alignment" : "left",
+          "logoWidth" : "150"
+        },
+        "id" : "e6927ba2-078b-4676-8a74-838383c9b634"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "padding" : {
+              "bottom" : "0%",
+              "left" : "8%",
+              "right" : "8%",
+              "top" : "8%"
+            }
+          },
+          "maxContentWidth" : "440px"
+        },
+        "id" : "9231d72f-782c-4e46-8d30-55ea6375183a"
+      }, {
+        "attributes" : {
+          "flexAlignment" : "flex-end"
+        },
+        "id" : "8add25a6-ad1d-491c-98b8-d02f62670dab"
+      }, {
+        "attributes" : {
+          "pickerButtonAlignment" : "right"
+        },
+        "id" : "59884c02-13e8-4923-84c5-5e78fa75be9c"
+      } ]
+    }
+  },
+  "urlName" : "my-account-layout"
+}

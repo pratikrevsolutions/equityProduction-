@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSrcTrgtRelationship xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <definitionCreationType>System</definitionCreationType>
+    <lookupFieldName>SetupPageSearchMetadata_chunk__dlm.rel_1775170657315_end__c</lookupFieldName>
+    <masterLabel>SetupPageSearchMetadata_chunk_SourceRecordId_map_SetupPageSearchMetadata_Id_1775170657315</masterLabel>
+    <owner>DataCloud</owner>
+    <relationshipCardinality>ManyToOne</relationshipCardinality>
+    <sourceFieldName>SetupPageSearchMetadata_chunk__dlm.SourceRecordId__c</sourceFieldName>
+    <targetEntity xsi:nil="true"/>
+    <targetFieldName>SetupPageSearchMetadata__dlm.Id__c</targetFieldName>
+</FieldSrcTrgtRelationship>

@@ -1,0 +1,19 @@
+:host { display: block; }
+.study-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+}
+
+.study-name { font-size: 1.05rem; font-weight: 700; color: #181818; line-height: 1.25; margin-bottom: 0.6rem; }
+
+.field-strip { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.field { min-width: 0; }
+.field-label { color: #706e6b; text-transform: uppercase; font-size: 0.625rem; font-weight: 700; letter-spacing: 0.04em; }
+.field-value { font-size: 0.8125rem; color: #181818; margin-top: 0.15rem; }
+
+@media (max-width: 900px) {
+    .field-strip { gap: 1rem; }
+}

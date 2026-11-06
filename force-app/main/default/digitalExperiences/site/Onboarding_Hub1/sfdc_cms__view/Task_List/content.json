@@ -1,0 +1,82 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Task List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"476346fb-938e-4226-82d8-09c0d34503f4\",\"columns\":[{\"UUID\":\"c93bc1ea-d896-4ff3-9bc5-b271a352ac0a\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backLabel" : "Home",
+                "backPath" : "/",
+                "dxpStyle" : { },
+                "iconName" : "standard:task",
+                "subtitle" : "Your open onboarding items across studies",
+                "title" : "My work"
+              },
+              "definition" : "c:emPortalPageBanner",
+              "id" : "cb2d86d3-8b8c-47bc-af81-a1cbd7e23d95",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "maxRows" : 8,
+                "title" : "My onboarding work"
+              },
+              "definition" : "c:emPortalMyWork",
+              "id" : "438f7c7c-d045-493a-8534-8b7dd999a492",
+              "type" : "component"
+            } ],
+            "id" : "c93bc1ea-d896-4ff3-9bc5-b271a352ac0a",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "476346fb-938e-4226-82d8-09c0d34503f4",
+          "type" : "component"
+        } ],
+        "id" : "65619093-ecc1-4729-a842-59ab06349531",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "dxpStyle" : { },
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "b5b7f6b5-0718-4d69-8969-3adfd61bb73b",
+          "type" : "component"
+        } ],
+        "id" : "bdbba7d0-23dd-46b3-9fb8-5f2e5ffc4d4d",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "4ddc944e-f3ec-41c9-992f-0e25d29244c9",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "list-00T"
+  },
+  "urlName" : "task-list"
+}

@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Payment Confirmation",
+  "contentBody" : {
+    "activeViewId" : "paymentConfirmation",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "payment-confirmation",
+    "urlPrefix" : "paymentConfirmation"
+  },
+  "urlName" : "payment-confirmation"
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>GA-02 Internal Greenlight approval</label>
+    <protected>false</protected>
+    <values>
+        <field>Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Applies_When__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Depends_On__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Due_Offset_Days__c</field>
+        <value xsi:type="xsd:double">65.0</value>
+    </values>
+    <values>
+        <field>Evidence_Field__c</field>
+        <value xsi:type="xsd:string">Internal_Greenlight__c</value>
+    </values>
+    <values>
+        <field>Evidence_Value__c</field>
+        <value xsi:type="xsd:string">TRUE</value>
+    </values>
+    <values>
+        <field>Instructions__c</field>
+        <value xsi:type="xsd:string">Submit the study for Internal Greenlight approval (approver = Study Ops lead). Approval sets Internal Greenlight + date. Path step Internal Greenlight is reached from this evidence.</value>
+    </values>
+    <values>
+        <field>Is_Required__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Item_Key__c</field>
+        <value xsi:type="xsd:string">GA-02</value>
+    </values>
+    <values>
+        <field>Owner_Role__c</field>
+        <value xsi:type="xsd:string">Study Operations</value>
+    </values>
+    <values>
+        <field>Path_Step__c</field>
+        <value xsi:type="xsd:string">Internal Greenlight</value>
+    </values>
+    <values>
+        <field>Per_Site__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Portal_Form__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sequence__c</field>
+        <value xsi:type="xsd:double">20.0</value>
+    </values>
+    <values>
+        <field>Subject__c</field>
+        <value xsi:type="xsd:string">Internal Greenlight approval</value>
+    </values>
+    <values>
+        <field>Workstream__c</field>
+        <value xsi:type="xsd:string">Greenlight &amp; Activation</value>
+    </values>
+</CustomMetadata>

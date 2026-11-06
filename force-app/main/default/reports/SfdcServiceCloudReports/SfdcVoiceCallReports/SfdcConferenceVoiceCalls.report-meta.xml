@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>VoiceCall.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Total number of conference voice calls.</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Conference Voice Calls</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallType</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallSubtype</field>
+    </columns>
+    <columns>
+        <field>VoiceCall.AgentWork.AgentWorkConversationalData$AgentWork.TransferRequester</field>
+    </columns>
+    <columns>
+        <field>VoiceCall.AgentWork.AgentWorkConversationalData$AgentWork.User</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>VoiceCall$CallDurationInSeconds</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(ISNULL(AgentWorkConversationalData.OwnershipStartDateTime), (AgentWorkConversationalData.AgentDisconnectDateTime - AgentWorkConversationalData.AgentCustomerMergeTime) * 100000, (AgentWorkConversationalData.OwnershipStartDateTime - AgentWorkConversationalData.AgentCustomerMergeTime) * 100000)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Duration of time when multiple service reps are simultaneously engaged with the customer during a call.</description>
+        <developerName>CDF1</developerName>
+        <label>Conference Duration</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Provides insights into conference calls, including start and end times, conference duration, and participating reps.</description>
+    <filter>
+        <criteriaItems>
+            <column>VoiceCall.AgentWork.AgentWorkConversationalData$TransferType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Warm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall.AgentWork.AgentWorkConversationalData$AgentCustomerMergeTime</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>VoiceCall$CallStartDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Conference Voice Calls</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCallConvDataByRep__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,86 @@
+<template>
+    <div class="wrap">
+        <div class="head" lwc:if={recordMode}>
+            <a href="#" class="back" onclick={handleBack}>&larr; Back</a>
+            <div class="title-row">
+                <template lwc:if={iconUrl}><img src={iconUrl} alt="" class="icon" /></template>
+                <div>
+                    <div class="eyebrow">{objectLabel}</div>
+                    <h1 class="title">{title}</h1>
+                </div>
+            </div>
+        </div>
+
+        <template lwc:if={loadError}>
+            <div class="slds-notify slds-notify_alert slds-alert_error" role="alert">{loadError}</div>
+        </template>
+        <template lwc:else>
+            <section class="card" lwc:if={recordMode}>
+                <lightning-record-form record-id={recordId} object-api-name={objectApiName}
+                    layout-type="Full" mode="view" columns="2"></lightning-record-form>
+            </section>
+
+            <template lwc:if={hasLists}>
+                <template for:each={lists} for:item="l">
+                    <section key={l.id} class="card">
+                        <h2 class="list-title">{l.label} <span class="count">{l.count}</span>
+                            <template lwc:if={l.canCreate}>
+                                <button class="new-btn slds-button slds-button_brand" data-list-id={l.id} onclick={handleNewClick}>New</button>
+                            </template>
+                        </h2>
+                        <template lwc:if={l.rows.length}>
+                            <div class="table-wrap">
+                                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                                    <thead><tr>
+                                        <template for:each={l.columns} for:item="c"><th key={c.key} scope="col">{c.label}</th></template>
+                                    </tr></thead>
+                                    <tbody>
+                                        <template for:each={l.rows} for:item="r">
+                                            <tr key={r.id}>
+                                                <template for:each={r.cells} for:item="c">
+                                                    <td key={c.key}>
+                                                        <template lwc:if={c.link}><a href={r.url}>{c.value}</a></template>
+                                                        <template lwc:else>{c.value}</template>
+                                                    </td>
+                                                </template>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <template lwc:if={l.more}><p class="more">Showing the first {l.rows.length}.</p></template>
+                        </template>
+                        <template lwc:else><p class="empty">No records.</p></template>
+                    </section>
+                </template>
+            </template>
+        </template>
+
+        <template lwc:if={showNewModal}>
+            <section class="slds-modal slds-fade-in-open" role="dialog" tabindex="-1">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={closeNewModal} title="Close">
+                            <lightning-icon icon-name="utility:close" size="small" variant="inverse"></lightning-icon>
+                        </button>
+                        <h2 class="slds-text-heading_medium slds-hyphenate">New {newModalLabel}</h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <lightning-record-edit-form object-api-name={newModalObjectApiName} onsuccess={handleCreateSuccess}>
+                            <lightning-messages></lightning-messages>
+                            <lightning-input-field class="slds-hide" field-name={newParentField} value={recordId}></lightning-input-field>
+                            <template for:each={newFieldList} for:item="f">
+                                <lightning-input-field key={f} field-name={f}></lightning-input-field>
+                            </template>
+                            <div class="slds-m-top_medium slds-grid slds-grid_align-end">
+                                <lightning-button variant="neutral" label="Cancel" onclick={closeNewModal}></lightning-button>
+                                <lightning-button variant="brand" type="submit" label="Save" class="slds-m-left_x-small"></lightning-button>
+                            </div>
+                        </lightning-record-edit-form>
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </div>
+</template>

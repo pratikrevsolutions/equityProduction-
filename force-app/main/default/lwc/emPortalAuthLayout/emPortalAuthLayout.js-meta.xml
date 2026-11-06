@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Portal Auth Layout</masterLabel>
+    <description>EM Onboarding Hub theme layout for the sign-in pages: no site header/footer, split card with an Equity Medical brand panel and the standard login components. Light DOM, no Apex. Phase 5, 2026-09-25.</description>
+    <targets>
+        <target>lightningCommunity__Theme_Layout</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="siteTitle" type="String" label="Site title" default="Onboarding Hub"/>
+            <property name="tagline" type="String" label="Tagline" default="Equity Medical study onboarding"/>
+            <property name="highlights" type="String" label="Highlights (semicolon-separated)" default="Every study's onboarding status in one place;Your open tasks and due dates;Milestones from award to site activation"/>
+            <property name="environmentNote" type="String" label="Environment note (e.g. UAT preview)" default=""/>
+            <property name="supportEmail" type="String" label="Support e-mail (optional)" default=""/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

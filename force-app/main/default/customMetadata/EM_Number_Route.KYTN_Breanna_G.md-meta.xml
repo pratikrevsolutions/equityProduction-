@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Breanna G</label>
+    <protected>false</protected>
+    <values>
+        <field>Agent_Username__c</field>
+        <value xsi:type="xsd:string">bgainous@equity-med.com.uat</value>
+    </values>
+    <values>
+        <field>Business_Hours_Name__c</field>
+        <value xsi:type="xsd:string">EM KYTN Hours</value>
+    </values>
+    <values>
+        <field>Owner_Name__c</field>
+        <value xsi:type="xsd:string">Breanna G</value>
+    </values>
+    <values>
+        <field>Phone_Number__c</field>
+        <value xsi:type="xsd:string">+16292901044</value>
+    </values>
+    <values>
+        <field>Queue_Developer_Name__c</field>
+        <value xsi:type="xsd:string">EM_KYTN_Recruiters</value>
+    </values>
+    <values>
+        <field>Route_Type__c</field>
+        <value xsi:type="xsd:string">Personal</value>
+    </values>
+    <values>
+        <field>Team__c</field>
+        <value xsi:type="xsd:string">KY/TN</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount - CDF1:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Total number of IVR calls completed without a transfer to agents.</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Calls Completed in IVR</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>((RowCount - CDF1:SUM)/RowCount)*100</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Percentage of IVR calls completed without a transfer to agents.</description>
+        <developerName>FORMULA2</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>IVR Containment Rate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(CDF1:SUM/RowCount)*100</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Percentage of IVR calls that were transferred to agents.</description>
+        <developerName>FORMULA3</developerName>
+        <downGroupingContext>GRAND_SUMMARY</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>IVR Hand-Off Rate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$FromPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$ToPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallType</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallSubtype</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>VoiceCall$IvrDuration</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallQueuedDateTime</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$QueueName</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$DisconnectReason</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallEndDateTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>VoiceCall$CallDurationInSeconds</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF( ISNULL(VoiceCall.CallQueuedDateTime), 0, 1)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Voice calls transferred from the IVR to an agent.</description>
+        <developerName>CDF1</developerName>
+        <label>IVR to Agent Transfer</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Provides metrics on IVR interactions, including containment rate and hand-off rate to service reps or AI agents.</description>
+    <filter>
+        <criteriaItems>
+            <column>VoiceCall$IvrDuration</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>VoiceCall$CallStartDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>IVR Voice Calls</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCalls__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

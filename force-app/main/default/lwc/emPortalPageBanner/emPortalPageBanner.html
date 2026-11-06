@@ -1,0 +1,14 @@
+<template>
+    <div class="banner">
+        <div class="lead">
+            <template lwc:if={hasIcon}><lightning-icon icon-name={iconName} size="medium" variant="inverse" class="icon"></lightning-icon></template>
+            <div>
+                <div class="title">{title}</div>
+                <template lwc:if={hasSubtitle}><div class="sub">{subtitle}</div></template>
+            </div>
+        </div>
+        <template lwc:if={hasBack}>
+            <a class="back" href={backHref}><lightning-icon icon-name="utility:back" size="xx-small" variant="inverse" class="slds-m-right_xx-small"></lightning-icon>{backLabel}</a>
+        </template>
+    </div>
+</template>

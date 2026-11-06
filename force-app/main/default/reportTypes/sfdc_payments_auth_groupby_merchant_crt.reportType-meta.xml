@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject></baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Shows payment authorizations by merchant</description>
+    <label>Payment Authorizations by Merchant</label>
+    <sections>
+        <masterLabel>Merchant Accounts</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Payment Gateways</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Payment Authorizations</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Payments</masterLabel>
+    </sections>
+</ReportType>

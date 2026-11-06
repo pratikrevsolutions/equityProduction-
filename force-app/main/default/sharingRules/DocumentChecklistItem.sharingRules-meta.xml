@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>EM_Portal_Study_Team_DocumentChecklistItem</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Onboarding Hub: EM_Portal_Study_Team edits every onboarding checklist item owned by internal users. Session 85.</description>
+        <label>EM Portal Study Team Checklist Items</label>
+        <sharedTo>
+            <group>EM_Portal_Study_Team</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

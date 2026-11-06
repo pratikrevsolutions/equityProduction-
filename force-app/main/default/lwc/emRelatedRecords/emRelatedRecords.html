@@ -1,0 +1,43 @@
+<template>
+    <article class="em-related">
+        <header class="em-head">
+            <div class="em-title">
+                <lightning-icon icon-name={iconName} size="small" alternative-text={title}></lightning-icon>
+                <h2>{heading}</h2>
+            </div>
+            <template lwc:if={showNew}>
+                <lightning-button label="New" variant="neutral" onclick={handleNew}></lightning-button>
+            </template>
+        </header>
+
+        <template lwc:if={error}>
+            <div class="em-empty em-error">
+                <lightning-icon icon-name="utility:error" size="x-small" variant="error"></lightning-icon>
+                <span>{error}</span>
+            </div>
+        </template>
+
+        <template lwc:if={hasRows}>
+            <div class="em-table">
+                <lightning-datatable
+                    key-field="Id"
+                    data={rows}
+                    columns={columns}
+                    hide-checkbox-column
+                    column-widths-mode="auto"
+                    min-column-width="110">
+                </lightning-datatable>
+            </div>
+            <template lwc:if={hasMore}>
+                <div class="em-more">{moreLabel}</div>
+            </template>
+        </template>
+
+        <template lwc:if={showEmpty}>
+            <div class="em-empty">
+                <lightning-icon icon-name="utility:info" size="x-small"></lightning-icon>
+                <span>{emptyMessage}</span>
+            </div>
+        </template>
+    </article>
+</template>

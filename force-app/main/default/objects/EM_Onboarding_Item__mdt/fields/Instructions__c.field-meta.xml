@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructions__c</fullName>
+    <description>Task description: what done means and where the evidence goes.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Instructions</label>
+    <length>2000</length>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

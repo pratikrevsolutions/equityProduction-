@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Study Awarded</fullName>
+        <default>false</default>
+        <label>Study Awarded</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract Executed</fullName>
+        <default>false</default>
+        <label>Contract Executed</label>
+    </customValue>
+    <customValue>
+        <fullName>Regulatory Packet Received</fullName>
+        <default>false</default>
+        <label>Regulatory Packet Received</label>
+    </customValue>
+    <customValue>
+        <fullName>Regulatory Packet Complete</fullName>
+        <default>false</default>
+        <label>Regulatory Packet Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>IRB Submitted</fullName>
+        <default>false</default>
+        <label>IRB Submitted</label>
+    </customValue>
+    <customValue>
+        <fullName>Budget Finalized</fullName>
+        <default>false</default>
+        <label>Budget Finalized</label>
+    </customValue>
+    <customValue>
+        <fullName>eSource Completed</fullName>
+        <default>false</default>
+        <label>eSource Completed</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal Greenlight</fullName>
+        <default>false</default>
+        <label>Internal Greenlight</label>
+    </customValue>
+    <customValue>
+        <fullName>Site Activated</fullName>
+        <default>false</default>
+        <label>Site Activated</label>
+    </customValue>
+    <description>The 9 onboarding path steps (D-8, Abbey 2026-09-01). Mirrors CareProgram.Onboarding_Status__c minus Not Started; used where an item/rule points at the step it proves.</description>
+    <masterLabel>EM Onboarding Path Step</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

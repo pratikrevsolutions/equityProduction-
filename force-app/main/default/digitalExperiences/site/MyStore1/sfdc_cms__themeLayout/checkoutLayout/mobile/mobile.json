@@ -1,0 +1,16 @@
+{
+  "type" : "sfdc_cms__themeLayout",
+  "title" : "Checkout Layout",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "alignment" : "left",
+          "logoWidth" : "100"
+        },
+        "id" : "1d86b335-9cc3-49c5-91a3-806a5419c895"
+      } ]
+    }
+  },
+  "urlName" : "checkout-layout"
+}

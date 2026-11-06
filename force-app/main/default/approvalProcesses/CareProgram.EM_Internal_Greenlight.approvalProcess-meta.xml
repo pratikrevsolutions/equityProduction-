@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <submitter>EM_Study_Ops_Team</submitter>
+        <type>group</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Onboarding_Status__c</field>
+        <field>Onboarding_Progress__c</field>
+        <field>Contract_Status__c</field>
+        <field>Regulatory_Packet_Complete__c</field>
+        <field>IRB_Status__c</field>
+        <field>Budget_Status__c</field>
+        <field>eSource_Build_Status__c</field>
+        <field>Site_Readiness__c</field>
+        <field>CRIO_Status__c</field>
+        <field>Recruitment_Readiness__c</field>
+        <field>SIV_Status__c</field>
+        <field>Target_Activation_Date__c</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>aengesetter@equity-med.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Study Operations greenlight</label>
+        <name>Study_Ops_Greenlight</name>
+    </approvalStep>
+    <description>Phase 4 GA-02 (design doc §4 step 8): Internal Greenlight can be requested only when steps 2–7 are satisfied AND IRB Approved, Site / CRIO / Recruitment Ready, SIV Completed. Approval stamps Internal Greenlight + date (the only writer); F-08 then advances the path. Approver = Study Ops lead (uat placeholder — swap at Phase 6 provisioning, P4-6 / Q7).</description>
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>NOT(Internal_Greenlight__c) &amp;&amp; ISPICKVAL(Contract_Status__c, &quot;Fully Executed&quot;) &amp;&amp; NOT(ISBLANK(SSU_Packet_Received_Date__c)) &amp;&amp; Regulatory_Packet_Complete__c &amp;&amp; ISPICKVAL(IRB_Status__c, &quot;Approved&quot;) &amp;&amp; ISPICKVAL(Budget_Status__c, &quot;Fully Executed&quot;) &amp;&amp; ISPICKVAL(eSource_Build_Status__c, &quot;Complete&quot;) &amp;&amp; ISPICKVAL(Site_Readiness__c, &quot;Ready&quot;) &amp;&amp; ISPICKVAL(CRIO_Status__c, &quot;Ready&quot;) &amp;&amp; ISPICKVAL(Recruitment_Readiness__c, &quot;Ready&quot;) &amp;&amp; SIV_Completed__c</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>EM_Greenlight_Set_Date</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>EM_Greenlight_Set_True</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>EM Internal Greenlight</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

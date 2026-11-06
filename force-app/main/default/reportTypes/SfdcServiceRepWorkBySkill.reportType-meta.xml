@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>AgentWork</baseObject>
+    <category>cases</category>
+    <deployed>true</deployed>
+    <description>Provides details on work items routed to service reps and AI agents, along with the skills assigned to each work item.</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>AgentWorkSkill</relationship>
+    </join>
+    <label>Agent Work by Skill</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AbandonedDateTime</field>
+            <table>AgentWork</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RequestDateTime</field>
+            <table>AgentWork</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Status</field>
+            <table>AgentWork</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>WorkItem</field>
+            <table>AgentWork</table>
+        </columns>
+        <masterLabel>Agent Work</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsAdditionalSkill</field>
+            <table>AgentWork.AgentWorkSkill</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Skill</field>
+            <table>AgentWork.AgentWorkSkill</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SkillLevel</field>
+            <table>AgentWork.AgentWorkSkill</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SkillPriority</field>
+            <table>AgentWork.AgentWorkSkill</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>WasDropped</field>
+            <table>AgentWork.AgentWorkSkill</table>
+        </columns>
+        <masterLabel>Agent Work Skills</masterLabel>
+    </sections>
+</ReportType>

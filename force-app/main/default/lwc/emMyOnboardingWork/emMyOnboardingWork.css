@@ -1,0 +1,26 @@
+:host { display: block; height: 100%; }
+.card { background: #fff; border: 1px solid #e5e5e5; border-radius: 0.25rem; padding: 0.75rem; height: 100%; }
+.head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+.title { display: flex; align-items: center; font-weight: 700; color: #181818; font-size: 0.95rem; }
+.badge { font-size: 0.72rem; font-weight: 700; color: #fff; background: #0176d3; border-radius: 1rem; padding: 0.1rem 0.6rem; }
+.bucket-head { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.4rem 0 0.2rem; color: #706e6b; }
+.bucket-head.overdue { color: #ba0517; }
+.bucket-head.week { color: #0b5cab; }
+.rows { list-style: none; margin: 0; padding: 0; }
+.row { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.4rem 0; border-top: 1px dashed #ecebea; }
+.tick { flex: none; width: 1.3rem; height: 1.3rem; margin-top: 0.1rem; border: 1.5px solid #747474; border-radius: 50%; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.tick lightning-icon { --sds-c-icon-color-foreground-default: transparent; }
+.tick:hover { border-color: #2e844a; background: #eaf7ee; }
+.tick:hover lightning-icon { --sds-c-icon-color-foreground-default: #2e844a; }
+.tick.locked { border-color: #c9c9c9; background: #f3f3f3; cursor: not-allowed; }
+.tick.locked lightning-icon { --sds-c-icon-color-foreground-default: #8c8c8c; }
+.main { flex: 1 1 auto; min-width: 0; }
+.subject { font-size: 0.85rem; font-weight: 600; color: #181818; }
+.req { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; color: #0b5cab; border: 1px solid #0b5cab; border-radius: 0.2rem; padding: 0 0.25rem; margin-left: 0.35rem; }
+.meta { font-size: 0.72rem; color: #706e6b; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.study { color: #032d60; font-weight: 600; }
+.site { background: #fff7e6; border: 1px solid #fbbf5f; border-radius: 1rem; padding: 0 0.4rem; }
+.due { flex: none; font-size: 0.75rem; color: #444; }
+.due.overdue { color: #ba0517; font-weight: 700; }
+.link { background: none; border: none; color: #0176d3; font-size: 0.78rem; cursor: pointer; padding: 0.4rem 0 0; }
+.empty { display: flex; align-items: center; color: #2e844a; font-size: 0.85rem; padding: 0.75rem 0; }

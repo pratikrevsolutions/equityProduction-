@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Default_Case_Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Reason</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Congratulations! You’re done with this case.&lt;/li&gt;&lt;li&gt;You&amp;#39;re ready to help solve another customer case.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Reason</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Review this case’s Feed to understand its history and escalation.&lt;/li&gt;&lt;li&gt;If the customer has provided a phone number, call them to resolve the issue. &lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Reason</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;No action has started on this case — the customer needs help. &lt;/li&gt;&lt;li&gt;To start working on this case, add yourself as the Case Owner. &lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Reason</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Follow up with the customer in one or two days.&lt;/li&gt;&lt;li&gt;To help you follow up, create a New Task in the Related tab.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Waiting on Customer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>Reason</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Review the case’s details and update its Priority accordingly. &lt;/li&gt;&lt;li&gt;Search Knowledge for any existing help, answers, or useful content.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

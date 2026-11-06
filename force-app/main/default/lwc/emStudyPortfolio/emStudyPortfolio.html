@@ -1,0 +1,126 @@
+<template>
+    <div class="emsp-board">
+        <div class="emsp-head">
+            <div>
+                <div class="emsp-title">{title}</div>
+                <div class="emsp-sub">{subtitle}</div>
+            </div>
+            <div class="emsp-controls">
+                <lightning-combobox name="location" label="Location" variant="label-hidden" class="emsp-location"
+                    value={location} options={locationOptions} onchange={handleLocation}></lightning-combobox>
+                <lightning-input type="search" label="Search" variant="label-hidden" placeholder="Search sponsor, protocol, condition…"
+                    value={search} onchange={handleSearch} class="emsp-search"></lightning-input>
+                <div class="emsp-sort">
+                    <span class="emsp-sort-label">Sort by</span>
+                    <lightning-combobox name="sort" label="Sort by" variant="label-hidden" class="emsp-sort-input"
+                        value={sortBy} options={sortOptions} onchange={handleSort}></lightning-combobox>
+                </div>
+            </div>
+        </div>
+
+        <div class="emsp-tabs">
+            <template for:each={tabs} for:item="t">
+                <button key={t.key} class={t.cls} data-key={t.key} onclick={handleTab}>
+                    {t.label}<span class="emsp-tab-count">{t.count}</span>
+                </button>
+            </template>
+        </div>
+
+        <template lwc:if={errorText}><div class="slds-text-color_error slds-m-vertical_small">{errorText}</div></template>
+        <template lwc:if={saveError}><div class="slds-text-color_error slds-m-vertical_small">{saveError}</div></template>
+
+        <template lwc:if={hasRows}>
+            <div class="emsp-cards">
+                <template for:each={visibleRows} for:item="r">
+                    <div key={r.id} class={r.accentClass}>
+                        <div class="emsp-scard-header">
+                            <div class="emsp-scard-headleft">
+                                <a href={r.url} class="emsp-scard-titlerow" title="View full study">
+                                    <span class="emsp-scard-protocol">{r.protocol}</span>
+                                    <template lwc:if={r.condition}><span class="emsp-scard-badge emsp-badge-light">{r.condition}</span></template>
+                                    <template lwc:if={r.phaseLabel}><span class="emsp-scard-badge emsp-badge-dark">{r.phaseLabel}</span></template>
+                                </a>
+                                <div class="emsp-scard-sponsor">{r.sponsor}</div>
+                                <div class="emsp-scard-metaline">
+                                    <span>Site <strong>{r.location}</strong></span>
+                                    <template lwc:if={r.awardedLabel}>
+                                        <span>Site acceptance <strong>{r.awardedLabel}</strong><template lwc:if={r.awardedDaysAgo}> · {r.awardedDaysAgo} days ago</template></span>
+                                    </template>
+                                </div>
+                            </div>
+
+                            <div class="emsp-scard-gl">
+                                <div class="emsp-stat-label">Internal Greenlight <span class="emsp-lock-inline">🔒 Site Lead only</span></div>
+                                <div class="emsp-gl-main"><span class={r.greenlight.glDotClass}></span>{r.greenlight.glLabel}</div>
+                                <template lwc:if={r.greenlight.hasTimeline}>
+                                    <div class="emsp-stat-sub">Est. internal greenlight · {r.greenlight.estDateOnly}</div>
+                                </template>
+                            </div>
+
+                            <div class="emsp-scard-milestones">
+                                <div class="emsp-stat-label">Milestones</div>
+                                <template lwc:if={r.greenlight.hasTimeline}>
+                                    <div class="emsp-ml-item"><span class={r.greenlight.recruitClass}></span>{r.greenlight.recruitText}</div>
+                                    <div class="emsp-ml-item"><span class={r.greenlight.marketingClass}></span>{r.greenlight.marketingText}</div>
+                                    <div class="emsp-ml-item"><span class={r.greenlight.estSubClass}></span>{r.greenlight.estSub}</div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div class="emsp-wk-grid">
+                            <template for:each={r.workstreams} for:item="w">
+                                <div key={w.key} class="emsp-wk-col">
+                                    <div class="emsp-wk-head">
+                                        <span class="emsp-wk-label">{w.label}</span>
+                                        <span class="emsp-wk-count">{w.headerRight}</span>
+                                    </div>
+                                    <div class={w.barClass}></div>
+                                    <div class="emsp-wk-items">
+                                        <template for:each={w.items} for:item="it">
+                                            <label key={it.key} class={it.rowClass}>
+                                                <input type="checkbox" checked={it.checked} disabled={it.disabled}
+                                                    data-id={r.id} data-field={w.field} data-value={it.value} data-boolean={w.boolean}
+                                                    onchange={handleMilestoneCheck} />
+                                                <span class="emsp-wk-itemtext">{it.value}
+                                                    <template lwc:if={it.dateLine}><span class="emsp-wk-date">{it.dateLine}</span></template>
+                                                </span>
+                                            </label>
+                                        </template>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+
+                        <div class="emsp-team">
+                            <div class="emsp-pg-title">Study Team</div>
+                            <div class="emsp-team-grid">
+                                <template for:each={r.teamGrid} for:item="m">
+                                    <div key={m.key} class="emsp-team-cell">
+                                        <div class="emsp-team-avatar">{m.initials}</div>
+                                        <div class="emsp-team-info">
+                                            <div class="emsp-team-rolelabel">{m.label}</div>
+                                            <div class={m.cls}>{m.name}</div>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </template>
+
+        <template lwc:if={hasRows}>
+            <div class="emsp-legend2">
+                <span class="emsp-legend2-item"><span class="emsp-lg-box emsp-lg-done">✓</span>Complete</span>
+                <span class="emsp-legend2-item"><span class="emsp-lg-box emsp-lg-active">✓</span>In progress</span>
+                <span class="emsp-legend2-item"><span class="emsp-lg-box emsp-lg-todo">✓</span>Blocked / No</span>
+                <span class="emsp-legend2-item"><span class="emsp-lg-box emsp-lg-earlier"></span>Earlier step</span>
+            </div>
+        </template>
+
+        <template lwc:if={showEmpty}>
+            <div class="emsp-empty">No studies match this view.</div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Portal Page Banner</masterLabel>
+    <description>Blue gradient page title strip for EM Study Portal pages (twin of the home hero): icon, title, subtitle, optional back link. Phase 5, 2026-09-16.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="title" type="String" label="Title" default="Page title"/>
+            <property name="subtitle" type="String" label="Subtitle" default=""/>
+            <property name="iconName" type="String" label="Icon (e.g. standard:task)" default=""/>
+            <property name="backLabel" type="String" label="Back link label (blank = none)" default=""/>
+            <property name="backPath" type="String" label="Back link path (site-relative)" default="/"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

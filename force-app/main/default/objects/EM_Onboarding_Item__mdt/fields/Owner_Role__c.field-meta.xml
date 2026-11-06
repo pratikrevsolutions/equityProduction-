@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_Role__c</fullName>
+    <description>CareProgramTeamMember role that owns the item; resolved to a User by F-07 (else EM_Onboarding_Owner_Default__mdt, else the Study owner).</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Owner Role</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Principal Investigator</fullName>
+                <default>false</default>
+                <label>Principal Investigator</label>
+            </value>
+            <value>
+                <fullName>Sub-Investigator</fullName>
+                <default>false</default>
+                <label>Sub-Investigator</label>
+            </value>
+            <value>
+                <fullName>Primary CRC</fullName>
+                <default>false</default>
+                <label>Primary CRC</label>
+            </value>
+            <value>
+                <fullName>Backup CRC</fullName>
+                <default>false</default>
+                <label>Backup CRC</label>
+            </value>
+            <value>
+                <fullName>Site Lead</fullName>
+                <default>false</default>
+                <label>Site Lead</label>
+            </value>
+            <value>
+                <fullName>Regulatory Lead</fullName>
+                <default>false</default>
+                <label>Regulatory Lead</label>
+            </value>
+            <value>
+                <fullName>SSU Owner</fullName>
+                <default>false</default>
+                <label>SSU Owner</label>
+            </value>
+            <value>
+                <fullName>CRIO / eSource</fullName>
+                <default>false</default>
+                <label>CRIO / eSource</label>
+            </value>
+            <value>
+                <fullName>Recruitment Lead</fullName>
+                <default>false</default>
+                <label>Recruitment Lead</label>
+            </value>
+            <value>
+                <fullName>Contracts / Finance</fullName>
+                <default>false</default>
+                <label>Contracts / Finance</label>
+            </value>
+            <value>
+                <fullName>Study Operations</fullName>
+                <default>false</default>
+                <label>Study Operations</label>
+            </value>
+            <value>
+                <fullName>Sponsor Contact</fullName>
+                <default>false</default>
+                <label>Sponsor Contact</label>
+            </value>
+            <value>
+                <fullName>CRO Contact</fullName>
+                <default>false</default>
+                <label>CRO Contact</label>
+            </value>
+            <value>
+                <fullName>IRB Contact</fullName>
+                <default>false</default>
+                <label>IRB Contact</label>
+            </value>
+            <value>
+                <fullName>Unblinded Pharmacist</fullName>
+                <default>false</default>
+                <label>Unblinded Pharmacist</label>
+            </value>
+            <value>
+                <fullName>Blinded Rater</fullName>
+                <default>false</default>
+                <label>Blinded Rater</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

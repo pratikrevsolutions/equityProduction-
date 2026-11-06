@@ -1,0 +1,50 @@
+:host { display: block; }
+.panel { background: #fff; border: 1px solid #e5e5e5; border-radius: 0.25rem; padding: 0.75rem; }
+.panel-head { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+.panel-title { display: flex; align-items: center; font-weight: 700; font-size: 0.95rem; color: #181818; gap: 0.4rem; }
+.muted { color: #706e6b; font-weight: 400; font-size: 0.8125rem; margin-left: 0.5rem; }
+.filters { display: flex; gap: 0.25rem; }
+/* up next */
+.up-next { display: flex; align-items: center; gap: 0.75rem; padding: 0.55rem 0.75rem; margin-bottom: 0.6rem; border-radius: 0.375rem; background: #eef4ff; border: 1px solid #aacbff; }
+.up-next-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #0b5cab; flex: none; }
+.up-next-main { flex: 1 1 auto; min-width: 0; }
+.up-next-subject { font-weight: 700; color: #032d60; font-size: 0.95rem; }
+.up-next-meta { display: flex; align-items: center; gap: 0.4rem; margin-top: 0.15rem; font-size: 0.78rem; color: #444; flex-wrap: wrap; }
+/* groups */
+.group { border-top: 1px solid #ecebea; }
+.group-head { display: flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.25rem; cursor: pointer; }
+.group-head:hover { background: #f8f8f8; }
+.group-name { font-weight: 700; font-size: 0.875rem; color: #181818; }
+.group-count { font-size: 0.75rem; font-weight: 700; color: #fff; background: #706e6b; border-radius: 0.75rem; padding: 0 0.5rem; }
+.is-complete .group-count { background: #2e844a; }
+.group-status { font-size: 0.78rem; color: #706e6b; margin-left: auto; }
+.group-check { --sds-c-icon-color-foreground-default: #2e844a; }
+.rows { list-style: none; margin: 0 0 0.4rem 1.4rem; padding: 0; }
+.item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.4rem 0.25rem; border-top: 1px dashed #ecebea; }
+.item.is-empty { color: #706e6b; font-size: 0.8125rem; font-style: italic; }
+.tick { flex: none; width: 1.35rem; height: 1.35rem; margin-top: 0.1rem; border: 1.5px solid #747474; border-radius: 50%; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.tick lightning-icon { --sds-c-icon-color-foreground-default: transparent; }
+.tick:hover { border-color: #2e844a; background: #eaf7ee; }
+.tick:hover lightning-icon { --sds-c-icon-color-foreground-default: #2e844a; }
+.tick.done { background: #2e844a; border-color: #2e844a; cursor: default; }
+.row-main { flex: 1 1 auto; min-width: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+.subject { font-size: 0.875rem; color: #181818; font-weight: 600; }
+.is-done .subject { color: #706e6b; font-weight: 400; text-decoration: line-through; }
+.hint { flex-basis: 100%; font-size: 0.75rem; color: #706e6b; }
+.row-side { flex: none; text-align: right; display: flex; flex-direction: column; gap: 0.1rem; }
+.due { font-size: 0.78rem; color: #444; }
+.due.overdue { color: #ba0517; font-weight: 700; }
+.owner { font-size: 0.72rem; color: #706e6b; }
+.req { font-size: 0.62rem; font-weight: 700; text-transform: uppercase; color: #0b5cab; border: 1px solid #0b5cab; border-radius: 0.2rem; padding: 0 0.25rem; }
+.pill { font-size: 0.68rem; background: #f3f3f3; border: 1px solid #e5e5e5; border-radius: 1rem; padding: 0 0.5rem; color: #444; white-space: nowrap; }
+.pill.site { background: #fff7e6; border-color: #fbbf5f; }
+.pill.step { background: #eef4ff; border-color: #aacbff; color: #0b5cab; }
+.pill.exc { background: #fdecec; border-color: #f0a3a3; color: #ba0517; }
+.pill.done-pill { background: #eaf7ee; border-color: #9fd7ae; color: #2e844a; }
+.done-toggle { padding: 0.25rem 0.25rem 0.1rem; }
+.link { background: none; border: none; color: #0176d3; font-size: 0.78rem; cursor: pointer; padding: 0; }
+.empty { color: #706e6b; font-size: 0.8125rem; padding: 0.75rem; }
+.tick.locked { border-color: #c9c9c9; background: #f3f3f3; cursor: not-allowed; }
+.tick.locked lightning-icon { --sds-c-icon-color-foreground-default: #8c8c8c; }
+.is-blocked .subject { color: #706e6b; }
+.pill.locked { background: #f3f3f3; border-color: #c9c9c9; color: #706e6b; }

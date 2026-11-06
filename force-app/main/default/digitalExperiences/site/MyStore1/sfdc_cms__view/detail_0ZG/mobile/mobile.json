@@ -1,0 +1,20 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Category",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+        },
+        "id" : "cef0a2af-6e2f-4ffc-b10b-8ddd5076bb96"
+      }, {
+        "attributes" : {
+          "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-medium\"}"
+        },
+        "id" : "d04d7e83-13b4-41ae-8307-3dddd8ccc0a9"
+      } ]
+    }
+  },
+  "urlName" : "category"
+}

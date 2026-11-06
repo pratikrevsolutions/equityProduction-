@@ -1,0 +1,9 @@
+:host { display: block; }
+.foot { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 0.75rem 1.25rem; font-size: 0.75rem; color: #706e6b; border-top: 1px solid #e5e5e5; background: #fff; }
+.left { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+.org { font-weight: 700; color: #032d60; }
+.sep { color: #c9c7c5; }
+.note { margin-left: 0.5rem; padding: 0.1rem 0.5rem; border-radius: 0.75rem; background: #fef3e0; color: #8c4b00; font-weight: 600; }
+.right { display: flex; align-items: center; gap: 1rem; }
+.right a { color: #0b5cab; text-decoration: none; font-weight: 600; }
+.right a:hover { text-decoration: underline; }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>AgentWork.WorkItem.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Total number of voice calls routed to each skill.</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>AgentWork.AgentWorkSkill$Skill</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Skills-Based Call Volume</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>AgentWork$WorkItem</field>
+    </columns>
+    <columns>
+        <field>AgentWork.AgentWorkSkill$SkillLevel</field>
+    </columns>
+    <columns>
+        <field>AgentWork.AgentWorkSkill$SkillPriority</field>
+    </columns>
+    <columns>
+        <field>AgentWork.AgentWorkSkill$IsAdditionalSkill</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AgentWork.AgentWorkSkill$WasDropped</field>
+    </columns>
+    <description>Provides details on call volume across different skills, along with information like skill level, priority, and other skill-related attributes for each call.</description>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork$WorkItem</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>VC</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork.AgentWorkSkill$Skill</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Call Volume by Skill</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcServiceRepWorkBySkill__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork$RequestDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

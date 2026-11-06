@@ -1,0 +1,85 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Milestones",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\": \"eaf89523-9c00-4399-b636-e0d907288f08\", \"columns\": [{\"UUID\": \"756825b4-cc7a-4ab6-a2eb-17a7713a4c40\", \"columnName\": \"Column 1\", \"columnKey\": \"col1\", \"columnWidth\": \"12\", \"seedComponents\": null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backLabel" : "Home",
+                "backPath" : "/",
+                "dxpStyle" : { },
+                "iconName" : "standard:date_time",
+                "subtitle" : "The next 60 days across all studies",
+                "title" : "Upcoming milestones"
+              },
+              "definition" : "c:emPortalPageBanner",
+              "id" : "8464ebc7-b14d-46b1-9cfc-0bb431e8feda",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "horizonDays" : 60,
+                "title" : "Upcoming milestones"
+              },
+              "definition" : "c:emPortalMilestones",
+              "id" : "7704a590-e316-4999-ad54-22d085405b64",
+              "type" : "component"
+            } ],
+            "id" : "756825b4-cc7a-4ab6-a2eb-17a7713a4c40",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "eaf89523-9c00-4399-b636-e0d907288f08",
+          "type" : "component"
+        } ],
+        "id" : "8b6c19e6-d4e5-4b39-b25d-2d2d730ef8f0",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Milestones",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "4ce40773-6acc-405b-873e-9bb345a02542",
+          "type" : "component"
+        } ],
+        "id" : "e64614c0-5349-4d77-9a26-91fda0de2bc0",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "792dcb6c-1a4d-4ac4-84bc-af986ba81673",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-milestones"
+  },
+  "urlName" : "milestones"
+}

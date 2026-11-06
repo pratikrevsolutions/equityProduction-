@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>WU10-15f: fills empty study fields (protocol, therapeutic area, phase, disease, PI, SQV date, selection letter date, start date, CPP, CRO, sponsor) from the linked BD Opportunity. Read-only on the opportunity. Never overwrites what is already typed.</description>
+    <flowDefinition>EM_BD_Refresh</flowDefinition>
+    <label>Refresh from BD</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

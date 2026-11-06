@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>OrderSummary.TotalAdjustedProductAmount:SUM - OrderSummary.TotalProductAmount:SUM + OrderSummary.TotalProductAdjDistAmount:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Discounts</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>OrderSummary.TotalAdjustedProductAmount:SUM + OrderSummary.TotalProductAdjDistAmount:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Net Sales</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>OrderSummary.TotalAdjustedProductTaxAmount:SUM + OrderSummary.TotalProductAdjDistTaxAmount:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Taxes</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>OrderSummary.TotalAdjDeliveryAmtWithTax:SUM + OrderSummary.TotalDeliveryAdjDistAmtWithTax:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Shipping</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>OrderSummary.TotalAdjProductAmtWithTax:SUM + OrderSummary.TotalProductAdjDistAmtWithTax:SUM + OrderSummary.TotalAdjDeliveryAmtWithTax:SUM + OrderSummary.TotalDeliveryAdjDistAmtWithTax:SUM</calculatedFormula>
+        <datatype>currency</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Sales</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>OrderSummary$TotalProductAmount</field>
+    </columns>
+    <description>Gross sales, discounts, total taxes, and shipping for Commerce stores, along with trends in gross, net, and total sales over time</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>OrderSummary$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Commerce Sales Report</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Analytics_Orders_Summaries__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>OrderSummary$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,68 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Study Site List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"96a3524f-b49e-4add-ad5c-a7c7cb1b520d\",\"columns\":[{\"UUID\":\"7a85362a-e227-4091-ab36-efcf97103287\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:emPortalStudyPortfolio",
+              "id" : "c3354576-c764-4500-8139-fe640d0fa005",
+              "type" : "component"
+            } ],
+            "id" : "7a85362a-e227-4091-ab36-efcf97103287",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "96a3524f-b49e-4add-ad5c-a7c7cb1b520d",
+          "type" : "component"
+        } ],
+        "id" : "c2064ab4-64a2-4181-bb13-18903872dcd2",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "dxpStyle" : { },
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "6dfe6320-ed7d-4b51-9ba8-300759bc0858",
+          "type" : "component"
+        } ],
+        "id" : "b8260178-4898-4f1b-b5bf-e18a9f0f4862",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "52b994cb-2eb7-4ec0-a0e9-be0ca6fb569a",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "list-184"
+  },
+  "urlName" : "studysite-list"
+}

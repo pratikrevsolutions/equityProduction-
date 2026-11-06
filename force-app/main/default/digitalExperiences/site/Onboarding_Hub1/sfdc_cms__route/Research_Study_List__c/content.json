@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "Research Study List",
+  "contentBody" : {
+    "activeViewId" : "Research_Study_List",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "list-7rs",
+    "urlPrefix" : "researchstudy"
+  },
+  "urlName" : "researchstudy-list"
+}

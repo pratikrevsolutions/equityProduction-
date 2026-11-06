@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(AgentWork.SpeedToAnswer:SUM + CDF1:SUM) / AgentWork_VoiceCall.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>The average amount of time that the caller waited in a queue before the call was answered, declined, or abandoned.</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Queue Wait Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>AgentWork.VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$FromPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$ToPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$CallType</field>
+    </columns>
+    <columns>
+        <field>AgentWork.VoiceCall$CallSubtype</field>
+    </columns>
+    <columns>
+        <field>AgentWork$SpeedToAnswer</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(
+  NOT(ISBLANK(AgentWork.AbandonedDateTime)),
+  AgentWork.AbandonedDateTime - AgentWork.RequestDateTime,
+  IF(
+    NOT(ISBLANK(AgentWork.CancelDateTime)),
+    AgentWork.CancelDateTime - AgentWork.RequestDateTime,
+    IF(
+      NOT(ISBLANK(AgentWork.DeclineDateTime)),
+      AgentWork.DeclineDateTime - AgentWork.RequestDateTime,
+      IF(
+        NOT(ISBLANK(AgentWork.PushTimeoutDateTime)),
+        AgentWork.PushTimeoutDateTime - AgentWork.RequestDateTime,
+        0
+      )
+    )
+  )
+)*100000</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Total time a caller spent waiting in the queue before the call was abandoned, cancelled, declined, timed out, or the rep was unavailable.</description>
+        <developerName>CDF1</developerName>
+        <label>Queue Wait Time for Unanswered Calls</label>
+        <scale>0</scale>
+    </customDetailFormulas>
+    <description>Provides details on call volume across queues, including call outcomes and queue wait times.</description>
+    <filter>
+        <criteriaItems>
+            <column>AgentWork.VoiceCall$CallQueuedDateTime</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,0,3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork.VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>AgentWork$User</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Automated Process</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$OriginalQueue</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>AgentWork$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Call Volume by Queue</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCallsByServiceRep__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AgentWork.VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,74 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Task Detail",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"de80090e-6f18-430f-b945-9cf6bd6261d8\",\"columns\":[{\"UUID\":\"3c7790d4-c3f6-4bb0-8b77-2a8b5e51220a\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "maxLists" : 6,
+                "objectApiName" : "Task",
+                "recordId" : "{!recordId}"
+              },
+              "definition" : "c:emPortalRecordPage",
+              "id" : "065232e4-9539-4569-9b48-ef12d458b882",
+              "type" : "component"
+            } ],
+            "id" : "3c7790d4-c3f6-4bb0-8b77-2a8b5e51220a",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "de80090e-6f18-430f-b945-9cf6bd6261d8",
+          "type" : "component"
+        } ],
+        "id" : "6aa584ec-0b87-421f-aa7e-b8be42fd7698",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "{!Record._Object}: {!Record._Title}",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "fc968b2f-4f2f-42e8-8a3b-ff43ea8b8dbf",
+          "type" : "component"
+        } ],
+        "id" : "966a130f-efdf-4108-9144-87c2be3bf06e",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "0c038553-7fd9-4593-acf0-801d14c2d543",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "detail-00T"
+  },
+  "urlName" : "task-detail"
+}

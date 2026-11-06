@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Sub-Investigator curriculum vitae and current license</description>
+    <isActive>true</isActive>
+    <masterLabel>Sub-I CV + license</masterLabel>
+</DocumentType>

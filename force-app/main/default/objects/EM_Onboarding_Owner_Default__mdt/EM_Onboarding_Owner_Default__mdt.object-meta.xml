@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Phase 4 F-07: default task owner per study-team role when the study has no CareProgramTeamMember in that role. Username blank = fall back to the Study owner. Filled from Abbey&apos;s named owners (P4-4 / P4-5 Q6).</description>
+    <label>EM Onboarding Owner Default</label>
+    <pluralLabel>EM Onboarding Owner Defaults</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-tabset active-tab-value={activeTab}>
+        <lightning-tab label="Details" value="details" onactive={handleActive}>
+            <section class="em-pst-card">
+                <p class="em-pst-hint">Click the pencil next to a field to edit it. Fields you cannot change have no pencil.</p>
+                <c-em-portal-record-details record-id={recordId} object-api-name="CareProgram" hidden-fields={hiddenFields}></c-em-portal-record-details>
+            </section>
+        </lightning-tab>
+        <lightning-tab label="Care Program Team Members" value="onboarding" onactive={handleActive}>
+            <c-em-portal-record-page record-id={recordId} object-api-name="CareProgram"
+                related-lists="CareProgramTeamMembers" lists-only
+                new-enabled-list="CareProgramTeamMembers" new-parent-field="CareProgramId"
+                new-fields="Name,AccountId,Contact__c,Role,MemberId,Category,SourceSystemIdentifier,SourceSystem"></c-em-portal-record-page>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

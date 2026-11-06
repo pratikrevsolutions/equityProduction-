@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Owns the account of the Onboarding Hub external staff contacts</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>EM Portal Account Owner</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+</Role>

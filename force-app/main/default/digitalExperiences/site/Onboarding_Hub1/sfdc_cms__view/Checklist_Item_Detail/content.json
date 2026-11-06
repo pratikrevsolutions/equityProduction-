@@ -1,0 +1,74 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Checklist Item Detail",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"3d911ae0-a85d-4b62-a356-1f23aa26afdb\",\"columns\":[{\"UUID\":\"9478be39-83df-487c-a586-f50e683cd574\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "maxLists" : 6,
+                "objectApiName" : "DocumentChecklistItem",
+                "recordId" : "{!recordId}"
+              },
+              "definition" : "c:emPortalRecordPage",
+              "id" : "7e9065be-6667-4126-8d92-fbae2a1ef355",
+              "type" : "component"
+            } ],
+            "id" : "9478be39-83df-487c-a586-f50e683cd574",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3d911ae0-a85d-4b62-a356-1f23aa26afdb",
+          "type" : "component"
+        } ],
+        "id" : "7c5bf12b-0765-43eb-8e32-5338bfd3fdcb",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "{!Record._Object}: {!Record._Title}",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "b9acaf9a-115b-4472-92e1-04a6a02324a0",
+          "type" : "component"
+        } ],
+        "id" : "01b9575b-1fa5-49a3-89b0-7d0624973b71",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "47f429a2-3b19-48ae-8ab1-bd9fc3bafab0",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "detail-0dd"
+  },
+  "urlName" : "checklistitem-detail"
+}

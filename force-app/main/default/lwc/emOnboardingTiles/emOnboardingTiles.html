@@ -1,0 +1,24 @@
+<template>
+    <template lwc:if={errorText}><div class="slds-text-color_error">{errorText}</div></template>
+    <template lwc:if={hasItems}>
+        <div class="tiles" role="list" aria-label="Onboarding workstreams">
+            <template for:each={tiles} for:item="t">
+                <div key={t.name} class={t.tileClass} title={t.title} role="listitem">
+                    <div class="tile-top">
+                        <span class="tile-name">{t.short}</span>
+                        <span class="tile-count">{t.count}</span>
+                    </div>
+                    <div class="tile-track"><div class="tile-fill" style={t.style}></div></div>
+                    <div class="tile-foot">
+                        <template lwc:if={t.isComplete}><lightning-icon icon-name="utility:check" size="xx-small" class="tile-check"></lightning-icon><span>Complete</span></template>
+                        <template lwc:elseif={t.hasOverdue}><span class="tile-overdue">{t.overdueLabel}</span></template>
+                        <template lwc:else><span>&nbsp;</span></template>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </template>
+    <template lwc:if={showEmpty}>
+        <div class="empty">Onboarding not started — use <b>Start Onboarding</b> once the study is awarded. The workstream cards fill from the onboarding items; progress and status are recalculated automatically (F-08), never set by hand.</div>
+    </template>
+</template>

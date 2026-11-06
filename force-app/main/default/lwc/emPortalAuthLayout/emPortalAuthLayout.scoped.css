@@ -1,0 +1,103 @@
+.em-auth {
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: radial-gradient(circle at 15% 10%, #e3edf8 0, transparent 45%), radial-gradient(circle at 85% 90%, #dde8f5 0, transparent 40%), #f3f6fa;
+    font-family: var(--dxp-s-html-font-family, 'Salesforce Sans', Arial, sans-serif);
+}
+.em-auth__card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    width: 100%;
+    min-width: 0;
+    max-width: 960px;
+    min-height: 560px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(3, 45, 96, 0.06), 0 18px 48px rgba(3, 45, 96, 0.14);
+}
+.em-auth__brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2.75rem 2.5rem;
+    color: #fff;
+    background: linear-gradient(155deg, #0e3a6b 0%, #1b5189 55%, #2465a6 100%);
+    position: relative;
+}
+.em-auth__brand::after {
+    content: '';
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 48px solid rgba(255, 255, 255, 0.06);
+    pointer-events: none;
+}
+.em-auth__pill {
+    display: inline-block;
+    margin-bottom: 1.25rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(255, 183, 93, 0.18);
+    border: 1px solid rgba(255, 183, 93, 0.6);
+    color: #ffd49a;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.em-auth__title { margin: 0; font-size: 2rem; line-height: 1.15; font-weight: 700; color: #fff; }
+.em-auth__tagline { margin: 0.5rem 0 0; font-size: 1rem; color: rgba(255, 255, 255, 0.8); }
+.em-auth__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.9rem; }
+.em-auth__item { display: flex; align-items: flex-start; gap: 0.7rem; font-size: 0.95rem; line-height: 1.4; color: rgba(255, 255, 255, 0.92); }
+.em-auth__tick {
+    flex: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.05rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.16);
+    position: relative;
+}
+.em-auth__tick::after {
+    content: '';
+    position: absolute;
+    left: 0.43rem;
+    top: 0.24rem;
+    width: 0.3rem;
+    height: 0.58rem;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.em-auth__brand-foot { margin: 0; font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); }
+.em-auth__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    padding: 2.75rem 3rem;
+}
+.em-auth__logo { display: block; width: 190px; max-width: 70%; height: auto; margin: 0 auto 1.5rem; }
+.em-auth__slot { width: 100%; min-width: 0; max-width: 100%; overflow-x: hidden; }
+.em-auth__help { align-self: stretch; text-align: center; margin: 1.75rem 0 0; padding-top: 1rem; border-top: 1px solid #e5e9ef; font-size: 0.78rem; line-height: 1.45; color: #6b7280; }
+.em-auth__help a { color: #1b5189; }
+@media (max-width: 800px) {
+    .em-auth { align-items: flex-start; padding: 1rem; }
+    .em-auth__card { grid-template-columns: minmax(0, 1fr); min-height: 0; border-radius: 12px; }
+    .em-auth__brand { padding: 1.5rem 1.5rem 1.25rem; gap: 0; }
+    .em-auth__brand::after, .em-auth__list, .em-auth__brand-foot { display: none; }
+    .em-auth__pill { margin-bottom: 0.6rem; }
+    .em-auth__title { font-size: 1.5rem; }
+    .em-auth__form { padding: 1.5rem 0.75rem 1.25rem; }
+    .em-auth__logo { width: 150px; margin-bottom: 1.25rem; }
+}

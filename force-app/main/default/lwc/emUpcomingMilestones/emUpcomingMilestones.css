@@ -1,0 +1,27 @@
+:host { display: block; height: 100%; }
+.card { background: #fff; border: 1px solid #e5e5e5; border-radius: 0.25rem; padding: 0.75rem; height: 100%; }
+.head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+.title { display: flex; align-items: center; font-weight: 700; color: #181818; font-size: 0.95rem; }
+.count { font-size: 0.72rem; color: #706e6b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+.timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+.timeline::before { content: ''; position: absolute; left: 0.45rem; top: 0.4rem; bottom: 0.4rem; width: 2px; background: #ecebea; }
+.ms { display: flex; gap: 0.6rem; padding: 0.35rem 0; }
+.dot-col { flex: none; width: 1rem; display: flex; justify-content: center; padding-top: 0.3rem; }
+.type { width: 0.7rem; height: 0.7rem; border-radius: 50%; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px #c9c9c9; }
+.type.target { background: #2e844a; } .type.siv { background: #0176d3; } .type.sponsor { background: #8a6bd0; } .type.next { background: #dd7a01; }
+.ms-main { flex: 1 1 auto; min-width: 0; }
+.ms-top { display: flex; gap: 0.5rem; align-items: baseline; }
+.ms-date { font-size: 0.78rem; font-weight: 700; color: #181818; }
+.when { font-size: 0.7rem; color: #706e6b; }
+.when.soon { color: #dd7a01; font-weight: 700; }
+.when.overdue { color: #ba0517; font-weight: 700; }
+.ms-label { font-size: 0.78rem; color: #444; }
+.extra { color: #706e6b; }
+.ms-study { font-size: 0.82rem; font-weight: 600; color: #032d60; display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: bottom; }
+.risk { font-size: 0.62rem; font-weight: 700; color: #ba0517; border: 1px solid #ba0517; border-radius: 0.2rem; padding: 0 0.25rem; margin-left: 0.35rem; vertical-align: middle; }
+.empty { color: #706e6b; font-size: 0.8rem; padding: 0.5rem 0; }
+.recent-head { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #706e6b; margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid #ecebea; }
+.recent { list-style: none; margin: 0.25rem 0 0; padding: 0; }
+.recent li { font-size: 0.8rem; padding: 0.2rem 0; display: flex; justify-content: space-between; gap: 0.5rem; }
+.recent a { color: #032d60; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.recent-meta { flex: none; color: #706e6b; font-size: 0.72rem; }

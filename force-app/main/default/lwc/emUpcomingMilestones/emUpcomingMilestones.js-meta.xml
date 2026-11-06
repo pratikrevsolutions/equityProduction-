@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Upcoming Milestones</masterLabel>
+    <description>Timeline of upcoming onboarding milestones across studies (target activation, SIV, sponsor activation, next action due) + studies awarded in the last 30 days. GraphQL, no Apex. Phase 4 WU6.</description>
+    <targets><target>lightning__HomePage</target><target>lightning__AppPage</target></targets>
+    <targetConfigs><targetConfig targets="lightning__HomePage,lightning__AppPage"><property name="title" type="String" label="Title" default="Upcoming milestones"/><property name="horizonDays" type="Integer" label="Horizon (days)" default="60"/></targetConfig></targetConfigs>
+</LightningComponentBundle>

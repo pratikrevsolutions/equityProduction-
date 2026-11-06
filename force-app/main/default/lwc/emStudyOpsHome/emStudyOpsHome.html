@@ -1,0 +1,29 @@
+<template>
+    <div class="home">
+        <div class="hero">
+            <div>
+                <div class="hello">{greeting}</div>
+                <div class="date">{today} · Study onboarding at a glance</div>
+            </div>
+            <template lwc:if={inLex}>
+            <div class="actions">
+                <lightning-button variant="brand" label="New Study" icon-name="utility:add" onclick={handleNewStudy}></lightning-button>
+                <lightning-button label="All studies" icon-name="utility:list" onclick={handleStudies}></lightning-button>
+                <lightning-button label="Sites" icon-name="utility:location" onclick={handleSites}></lightning-button>
+                <lightning-button label="Reports" icon-name="utility:chart" onclick={handleReports}></lightning-button>
+            </div>
+            </template>
+            <template lwc:else>
+            <div class="actions">
+                <a class="site-action" href={studiesHref}><lightning-icon icon-name="utility:list" size="x-small" variant="inverse" class="slds-m-right_xx-small"></lightning-icon>All studies</a>
+            </div>
+            </template>
+        </div>
+        <!-- <c-em-study-site-kpi-cards hide-title="true" activation-horizon="30"></c-em-study-site-kpi-cards> -->
+        <div class="row-full"><c-em-study-portfolio></c-em-study-portfolio></div>
+        <div class="row-split">
+            <div class="col"><c-em-my-onboarding-work></c-em-my-onboarding-work></div>
+            <div class="col"><c-em-upcoming-milestones horizon-days={horizonDays}></c-em-upcoming-milestones></div>
+        </div>
+    </div>
+</template>

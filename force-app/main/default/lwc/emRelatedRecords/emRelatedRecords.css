@@ -1,0 +1,43 @@
+.em-related {
+    background: #fff;
+    border: 1px solid #dfe5ec;
+    border-top: 4px solid #65bc7b;
+    border-radius: 0.6rem;
+    margin-bottom: 0.9rem;
+    overflow: hidden;
+}
+.em-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid #edf1f5;
+}
+.em-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.em-title h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #003b6d;
+    letter-spacing: 0.02em;
+}
+.em-table { width: 100%; overflow-x: auto; }
+.em-more {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.72rem;
+    color: #5c6b7a;
+    text-align: right;
+}
+.em-empty {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0.9rem;
+    color: #5c6b7a;
+    font-size: 0.85rem;
+}
+.em-error { color: #ba0517; }

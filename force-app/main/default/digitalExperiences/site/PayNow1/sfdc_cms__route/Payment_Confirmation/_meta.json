@@ -1,0 +1,6 @@
+{
+  "apiName" : "Payment_Confirmation",
+  "type" : "sfdc_cms__route",
+  "path" : "routes",
+  "contentKey" : "MC4UMIAHSVZRDEZLBCGHXZXYADTY"
+}

@@ -1,0 +1,121 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Checkout",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "0",
+            "dxpStyle" : {
+              "margin" : {
+                "bottom" : "0px",
+                "left" : "0px",
+                "right" : "0px",
+                "top" : "0px"
+              },
+              "padding" : {
+                "bottom" : "0px",
+                "left" : "0px",
+                "right" : "0px",
+                "top" : "0px"
+              }
+            },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "3000px",
+            "sectionColumnGutterWidth" : "0",
+            "sectionConfig" : "{\"UUID\":\"d66fe829-1145-479d-bbda-6c8119b7fdfa\",\"columns\":[{\"UUID\":\"77c7973a-45b4-4447-94dc-7c025a96e576\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "a11yLoadingIndicator" : true,
+                "checkoutDetails" : "{!Checkout.Details}",
+                "checkoutPaymentLink" : "{!Checkout.PaymentLink}",
+                "checkoutSessionError" : "{!Checkout.SessionError}",
+                "clientErrors" : true,
+                "dxpStyle" : { },
+                "integrationErrors" : true,
+                "sessionErrors" : true,
+                "typeCheckoutFailure" : true,
+                "typeInventoryFailure" : true,
+                "typeOther" : true,
+                "typeOtherIntegrationFailure" : true,
+                "typePaymentFailure" : true,
+                "typeShippingFailure" : true,
+                "visibleLoadingIndicator" : false
+              },
+              "definition" : "commerce_builder:checkoutNotification",
+              "id" : "c6897d2c-329f-4403-a655-61c51917bb4b",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "cartDetails" : "{!Checkout.CartDetails}",
+                "cartPromotions" : "{!Cart.Promotions}",
+                "cartTotals" : "{!Checkout.CartTotals}",
+                "checkoutAddresses" : "{!Checkout.Addresses}",
+                "checkoutDetails" : "{!Checkout.Details}",
+                "currencyIsoCode" : "{!Checkout.Details.cartSummary.currencyIsoCode}",
+                "dxpStyle" : { },
+                "giftWraps" : "{!Checkout.GiftWraps}",
+                "hasNextPageItems" : "{!Cart.Pagination.hasNextPage}",
+                "items" : "{!Cart.Items}",
+                "paymentLinkData" : "{!Checkout.PaymentLink}"
+              },
+              "definition" : "commerce_builder:checkoutLayoutManaged",
+              "id" : "10d59d0e-740e-46e0-8387-9dd5754890dc",
+              "type" : "component",
+              "dataProviders" : [ {
+                "definition" : "sfdc_cms__commerceCartDataProvider",
+                "sfdcExpressionKey" : "Cart",
+                "attributes" : { }
+              } ]
+            } ],
+            "id" : "77c7973a-45b4-4447-94dc-7c025a96e576",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d66fe829-1145-479d-bbda-6c8119b7fdfa",
+          "type" : "component"
+        } ],
+        "id" : "8ee9e818-579b-4c7c-b14d-1f1069bef903",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "dxpStyle" : { },
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "936d34f0-5060-4d87-a576-1406eaa5d055",
+          "type" : "component"
+        } ],
+        "id" : "49b50c3d-5852-4e6a-ba81-454e965e030f",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "a29f60b5-97d4-47fc-ab1f-e9f173a3f85c",
+      "type" : "component"
+    },
+    "dataProviders" : [ {
+      "definition" : "sfdc_cms__commerceCheckoutDataProvider",
+      "sfdcExpressionKey" : "Checkout",
+      "attributes" : { }
+    } ],
+    "themeLayoutType" : "Checkout",
+    "viewType" : "current-checkout"
+  },
+  "urlName" : "checkout"
+}

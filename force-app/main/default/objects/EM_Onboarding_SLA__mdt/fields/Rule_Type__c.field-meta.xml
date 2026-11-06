@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rule_Type__c</fullName>
+    <description>Which F-09 check this row parameterises.</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Rule Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Days In Step</fullName>
+                <default>false</default>
+                <label>Days In Step</label>
+            </value>
+            <value>
+                <fullName>Item Overdue Grace</fullName>
+                <default>false</default>
+                <label>Item Overdue Grace</label>
+            </value>
+            <value>
+                <fullName>Target Activation Window</fullName>
+                <default>false</default>
+                <label>Target Activation Window</label>
+            </value>
+            <value>
+                <fullName>Portal Untouched</fullName>
+                <default>false</default>
+                <label>Portal Untouched</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

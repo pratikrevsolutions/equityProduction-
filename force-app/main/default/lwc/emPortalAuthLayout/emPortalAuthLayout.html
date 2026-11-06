@@ -1,0 +1,29 @@
+<template lwc:render-mode="light">
+    <div class="em-auth">
+        <main class="em-auth__card">
+            <section class="em-auth__brand" aria-label={siteTitle}>
+                <div class="em-auth__brand-top">
+                    <template lwc:if={hasNote}><span class="em-auth__pill">{environmentNote}</span></template>
+                    <h1 class="em-auth__title">{siteTitle}</h1>
+                    <p class="em-auth__tagline">{tagline}</p>
+                </div>
+                <template lwc:if={hasHighlights}>
+                    <ul class="em-auth__list">
+                        <template for:each={highlightItems} for:item="h">
+                            <li key={h.key} class="em-auth__item"><span class="em-auth__tick" aria-hidden="true"></span>{h.label}</li>
+                        </template>
+                    </ul>
+                </template>
+                <p class="em-auth__brand-foot">&copy; {year} Equity Medical &middot; Excellence in clinical research</p>
+            </section>
+            <section class="em-auth__form">
+                <img class="em-auth__logo" src={logoSrc} alt="Equity Medical" />
+                <div class="em-auth__slot"><slot></slot></div>
+                <p class="em-auth__help">
+                    Secure sign-in for Equity Medical staff and study partners.
+                    <template lwc:if={hasSupport}> Need access? <a href={supportHref}>{supportEmail}</a></template>
+                </p>
+            </section>
+        </main>
+    </div>
+</template>

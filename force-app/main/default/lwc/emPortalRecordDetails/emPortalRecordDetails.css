@@ -1,0 +1,18 @@
+.em-prd-section { margin-bottom: .75rem; }
+.em-prd-sec-head { display: flex; align-items: center; gap: .5rem; width: 100%; text-align: left; border: 0; cursor: pointer;
+    background: #f3f3f3; border-radius: .25rem; padding: .5rem .75rem; font-size: 1rem; font-weight: 400; color: #181818; }
+.em-prd-sec-head:hover { background: #ecebea; }
+.em-prd-grid { padding: .5rem .25rem 0; }
+.em-prd-row { display: flex; flex-wrap: wrap; }
+.em-prd-cell { flex: 0 0 50%; max-width: 50%; padding: 0 .75rem; min-height: 1px; }
+.em-prd-cell_full { flex-basis: 100%; max-width: 100%; }
+.em-prd-view { display: flex; align-items: flex-start; border-bottom: 1px solid #e5e5e5; margin-bottom: .25rem; }
+.em-prd-out { flex: 1 1 auto; min-width: 0; }
+.em-prd-pencil { flex: 0 0 auto; border: 0; background: transparent; cursor: pointer; padding: .25rem; margin-top: 1.1rem; opacity: .55; }
+.em-prd-view:hover .em-prd-pencil, .em-prd-pencil:focus { opacity: 1; }
+.em-prd-footer { position: sticky; bottom: 0; display: flex; justify-content: center; gap: .5rem; padding: .75rem;
+    background: #f3f3f3; border-top: 1px solid #dddbda; z-index: 5; }
+.em-prd-save { margin-left: .25rem; }
+.em-prd-saved { margin-top: .5rem; color: #2e844a; font-size: .875rem; }
+.em-prd-loading { position: relative; min-height: 4rem; }
+@media (max-width: 768px) { .em-prd-cell { flex-basis: 100%; max-width: 100%; } }

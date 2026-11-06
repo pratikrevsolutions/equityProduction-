@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Tick_Checkbox</name>
+        <label>Tick Selection Letter Received</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Selection_Letter_Received__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>WU10-14 (Abbey 2026-09-04 &apos;READ THIS ONE&apos; tab). CareProgram before-save: ticks Selection_Letter_Received__c whenever EM_Selection_Letter_Received_Date__c holds a date and the box is still clear, so the date is the only field anyone types and CB-01&apos;s evidence rule keeps working unchanged. Honours Migration Mode.</description>
+    <environments>Default</environments>
+    <interviewLabel>EM Selection Letter Stamp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EM Selection Letter Stamp</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Tick_Checkbox</targetReference>
+        </connector>
+        <filterFormula>NOT({!$Setup.Migration_Mode__c.Is_Active__c}) &amp;&amp; NOT(ISBLANK({!$Record.EM_Selection_Letter_Received_Date__c})) &amp;&amp; NOT({!$Record.Selection_Letter_Received__c})</filterFormula>
+        <object>CareProgram</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

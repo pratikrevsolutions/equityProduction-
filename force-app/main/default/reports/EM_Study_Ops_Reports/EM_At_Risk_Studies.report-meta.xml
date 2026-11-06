@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CareProgram$Name</field>
+    </columns>
+    <columns>
+        <field>CareProgram$Onboarding_Progress__c</field>
+    </columns>
+    <columns>
+        <field>CareProgram$At_Risk_Reason__c</field>
+    </columns>
+    <columns>
+        <field>CareProgram$Next_Action__c</field>
+    </columns>
+    <columns>
+        <field>CareProgram$Next_Action_Owner__c</field>
+    </columns>
+    <columns>
+        <field>CareProgram$Next_Action_Due__c</field>
+    </columns>
+    <description>Studies flagged At Risk by the daily F-09 SLA evaluation, with the reason and next action. Phase 4 WU6.</description>
+    <filter>
+        <criteriaItems>
+            <column>CareProgram$At_Risk__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CareProgram$Onboarding_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>EM At-Risk Studies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>EM_Onboarding_Studies__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CareProgram$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Abbey&apos;s external (CC Plus) study onboarding staff on the Onboarding Hub: edit studies, checklist items, own tasks; read sites. Needs PSLs Site Coordinator EC, Site Mgmt Investigator EC, HC for EC Sites. Membership = EM_PS_Portal_Member.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>EM Portal Study Onboarding</label>
+    <permissionSets>EM_PS_Portal_HC_Access</permissionSets>
+    <permissionSets>EM_PS_Portal_Site_Coordinator</permissionSets>
+    <permissionSets>EM_PS_Portal_Site_Docs</permissionSets>
+    <permissionSets>EM_PS_Portal_Study_Plus</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

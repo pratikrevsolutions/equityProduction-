@@ -1,0 +1,15 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Cart",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-medium\"}"
+        },
+        "id" : "009a93cc-c2cb-4291-ad21-2acf1fc7cc84"
+      } ]
+    }
+  },
+  "urlName" : "cart"
+}

@@ -1,0 +1,85 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Login",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"166517fe-a0c6-4a65-8f13-152dd39fcc98\",\"columns\":[{\"UUID\":\"6c031d7c-8612-4c16-a116-b70126c5e50a\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "alignment" : "center",
+                "dxpStyle" : { },
+                "imageInfo" : "",
+                "imageInfoMobile" : "",
+                "logoWidth" : 250
+              },
+              "definition" : "dxp_content_layout:siteLogo",
+              "id" : "ce50ae74-87c1-4bb8-8ce8-849688571f70",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : { },
+                "emailLabel" : "Email",
+                "inForm" : false,
+                "verifyButtonLabel" : "Log In"
+              },
+              "definition" : "commerce_builder:passwordlessLoginForm",
+              "id" : "ea00004e-8947-493b-9b0c-0311f284620f",
+              "type" : "component"
+            } ],
+            "id" : "6c031d7c-8612-4c16-a116-b70126c5e50a",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "166517fe-a0c6-4a65-8f13-152dd39fcc98",
+          "type" : "component"
+        } ],
+        "id" : "4cfd1582-c8f5-409e-b415-7c20d2d34e45",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Login",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "5765e1fc-7b63-4753-a087-af70624fbc98",
+          "type" : "component"
+        } ],
+        "id" : "d650b432-58c5-43fd-beec-e5ba4167ff01",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "b4ab4c97-add9-4f9e-809e-34984fb86619",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "External",
+    "viewType" : "login-main"
+  },
+  "urlName" : "login"
+}

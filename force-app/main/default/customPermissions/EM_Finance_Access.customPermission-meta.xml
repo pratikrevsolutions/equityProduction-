@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Finance user marker: the Onboarding Hub study page shows the Contract &amp; Budget amounts only to holders (BudgetAmount has profile FLS we may not change, §9.2). Granted only via EM_PS_Budget_Fields / EM_Finance_Budget.</description>
+    <isLicensed>false</isLicensed>
+    <label>EM Finance Access</label>
+</CustomPermission>

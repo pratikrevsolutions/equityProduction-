@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>WU10-14b. Care Program Team Member before-delete: rebuilds the study&apos;s people mirrors without the row that is about to be deleted (passed as var_ExcludeId, since the record still exists at this point). Before-delete triggers reject an entry formula here, so there is no Migration Mode guard - loads do not delete team members, and the subflow only rewrites the mirrors.</description>
+    <environments>Default</environments>
+    <interviewLabel>EM Study Team Mirror Delete {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EM Study Team Mirror Delete</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Rebuild_Mirrors</targetReference>
+        </connector>
+        <object>CareProgramTeamMember</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Rebuild_Mirrors</name>
+        <label>Rebuild the study&apos;s people mirrors</label>
+        <locationX>50</locationX>
+        <locationY>150</locationY>
+        <flowName>EM_Study_Team_Mirror</flowName>
+        <inputAssignments>
+            <name>var_CareProgramId</name>
+            <value>
+                <elementReference>$Record.CareProgramId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>var_ExcludeId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Maps each Equity Medical phone number (E.164) to where inbound calls go: a recruiter&apos;s direct line or a team&apos;s round-robin queue. Read by EM Inbound Call Routing.</description>
+    <label>EM Number Route</label>
+    <pluralLabel>EM Number Routes</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

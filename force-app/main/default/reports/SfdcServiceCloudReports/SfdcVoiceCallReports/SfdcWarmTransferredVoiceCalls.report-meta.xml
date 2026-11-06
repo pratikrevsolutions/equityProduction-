@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>VoiceCall.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Total number of voice calls that were warm-transferred.</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Warm Transferred Voice Calls</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>CDF1:SUM / VoiceCall.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Average time a caller waits on hold from when a warm transfer is initiated until the call is merged.</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Average Warm Transfer Wait Time</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$FromPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$ToPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallType</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallSubtype</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>VoiceCall.AgentWork$SpeedToAnswer</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>VoiceCall.AgentWork$HandleTime</field>
+    </columns>
+    <columns>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>(AgentWorkConversationalData.AgentCustomerMergeTime - AgentWork.RequestDateTime) * 100000</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Time the caller spent on hold during the warm transfer.</description>
+        <developerName>CDF1</developerName>
+        <label>Warm Transfer Wait Time</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Provides insights into voice calls that were warm transferred, including wait times during the transfer.</description>
+    <filter>
+        <criteriaItems>
+            <column>VoiceCall.AgentWork$IsTransfer</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall.AgentWork.AgentWorkConversationalData$AgentWork.TransferRequester</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall.AgentWork.AgentWorkConversationalData$TransferType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Warm</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall.AgentWork.AgentWorkConversationalData$AgentCustomerMergeTime</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>VoiceCall$CallStartDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Warm Transferred Voice Calls</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCallConvDataByRep__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

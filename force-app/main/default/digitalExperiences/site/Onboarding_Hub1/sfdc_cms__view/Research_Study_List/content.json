@@ -1,0 +1,68 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Research Study List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"90628600-5f91-4740-a91d-bf35d5ab864e\",\"columns\":[{\"UUID\":\"c4806898-e76d-42ba-a522-f0e32d7ee529\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { }
+              },
+              "definition" : "c:emPortalStudyPortfolio",
+              "id" : "acec9614-0ad3-49b7-9f53-9b4487fc0342",
+              "type" : "component"
+            } ],
+            "id" : "c4806898-e76d-42ba-a522-f0e32d7ee529",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "90628600-5f91-4740-a91d-bf35d5ab864e",
+          "type" : "component"
+        } ],
+        "id" : "246c68e4-0b35-4495-892d-08ca6fbc5ae6",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "dxpStyle" : { },
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "659eef1a-bffb-42c2-8752-d4d854f3055f",
+          "type" : "component"
+        } ],
+        "id" : "0f457ba5-ac98-4f43-b5ef-cc09c2e3d5a0",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "dff4046c-fe32-4a75-8603-f30853ff6fce",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "list-7rs"
+  },
+  "urlName" : "researchstudy-list"
+}

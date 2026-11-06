@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM My Onboarding Work</masterLabel>
+    <description>The viewer's open onboarding items across all studies: Overdue / This week / Later, study + site, one-click Complete, locks on gated items. GraphQL, no Apex. Phase 4 WU6.</description>
+    <targets><target>lightning__HomePage</target><target>lightning__AppPage</target></targets>
+    <targetConfigs><targetConfig targets="lightning__HomePage,lightning__AppPage"><property name="title" type="String" label="Title" default="My onboarding work"/></targetConfig></targetConfigs>
+</LightningComponentBundle>

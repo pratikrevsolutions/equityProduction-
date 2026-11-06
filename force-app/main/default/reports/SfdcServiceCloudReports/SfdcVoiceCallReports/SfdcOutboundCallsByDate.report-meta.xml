@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>VoiceCall.Name:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Call Volume</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>VoiceCall$Name</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$FromPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$ToPhoneNumber</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallSubtype</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallOrigin</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallEndDateTime</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>VoiceCall$CallDurationInSeconds</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallDisposition</field>
+    </columns>
+    <columns>
+        <field>VoiceCall$CallResolution</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(ISNULL(VoiceCall.CallConnectDateTime),
+            (DATETIMEVALUE(VoiceCall.CallEndDateTime)- DATETIMEVALUE(VoiceCall.CallStartDateTime))*100000,
+            (DATETIMEVALUE(VoiceCall.CallConnectDateTime)- DATETIMEVALUE(VoiceCall.CallStartDateTime))*100000
+            )</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Total time between when the service rep initiated an outbound call and when the customer answered or ended the call without answering.</description>
+        <developerName>CDF1</developerName>
+        <label>Outbound Call Ring Time</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Provides outbound voice call details by date to track daily call volume and trends.</description>
+    <filter>
+        <criteriaItems>
+            <column>VoiceCall$CallType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>VoiceCall$VendorType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>9</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>VoiceCall$CallStartDateTime</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>VoiceCall$DisconnectReason</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Outbound Voice Calls by Date</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>SfdcVoiceCalls__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>VoiceCall$CallStartDateTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

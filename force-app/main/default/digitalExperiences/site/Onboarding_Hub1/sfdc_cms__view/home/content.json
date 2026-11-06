@@ -1,0 +1,73 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : { },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\": \"a8bcc7f4-775a-4dc5-8e11-06be5b50a5a9\", \"columns\": [{\"UUID\": \"e576eab3-f2ca-47dd-a27a-0f8cb32682e3\", \"columnName\": \"Column 1\", \"columnKey\": \"col1\", \"columnWidth\": \"12\", \"seedComponents\": null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "dxpStyle" : { },
+                "horizonDays" : 60,
+                "studiesPath" : "/studies"
+              },
+              "definition" : "c:emPortalHome",
+              "id" : "8a245c63-82c0-4a46-ac23-483d9ebc27e0",
+              "type" : "component"
+            } ],
+            "id" : "e576eab3-f2ca-47dd-a27a-0f8cb32682e3",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "a8bcc7f4-775a-4dc5-8e11-06be5b50a5a9",
+          "type" : "component"
+        } ],
+        "id" : "0bd33a6d-6546-4311-8c85-7200343093b0",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "dxpStyle" : { },
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "6b397964-6e14-4c77-81b0-4cf003421c01",
+          "type" : "component"
+        } ],
+        "id" : "e65dadbd-5968-46a0-a92d-31a900785571",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "9dd6a30d-8acb-4242-b8ab-ff312452d677",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  },
+  "urlName" : "home"
+}

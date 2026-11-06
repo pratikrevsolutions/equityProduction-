@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Portal Record Page</masterLabel>
+    <description>Onboarding Hub (LWR) generic object page body: title strip, Full-layout record form (inline edit per FLS) and related lists via UI API. Task / Study Site / Document Checklist Item / Research Study pages. WU11d, 2026-09-25.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="recordId" type="String" label="Record Id" default="{!recordId}"/>
+            <property name="objectApiName" type="String" label="Object API name" default=""/>
+            <property name="maxLists" type="Integer" label="Max related lists" default="6"/>
+            <property name="relatedLists" type="String" label="Related list ids (comma-separated; blank = page layout)" default=""/>
+            <property name="listsOnly" type="Boolean" label="Related lists only (no header / record form)" default="false"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>EM Portal My Work</masterLabel>
+    <description>EM Study Portal (LWR) wrapper for c/emMyOnboardingWork - the viewer's open onboarding items across studies (Overdue / This week / Later, one-click Complete, gating locks). Site-only targets. Phase 5, 2026-09-16.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="title" type="String" label="Title" default="My onboarding work"/>
+            <property name="maxRows" type="Integer" label="Rows per bucket before Show all" default="8"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

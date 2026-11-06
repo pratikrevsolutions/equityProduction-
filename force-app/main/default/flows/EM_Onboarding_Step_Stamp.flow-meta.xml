@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Set_Stamp</name>
+        <label>Stamp step entry date</label>
+        <locationX>250</locationX>
+        <locationY>120</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Step_Entered_Date__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Phase 4 WU3. CareProgram before-save: stamps Step_Entered_Date__c = today when the record is created or Onboarding_Status__c changes (F-08 advance, approval field update, or a hand-move alike) - the Days In Step clock for F-09. Honours Migration Mode.</description>
+    <environments>Default</environments>
+    <interviewLabel>EM Onboarding Step Stamp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>EM Onboarding Step Stamp</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Stamp</targetReference>
+        </connector>
+        <filterFormula>NOT({!$Setup.Migration_Mode__c.Is_Active__c}) &amp;&amp; (ISNEW() || ISCHANGED({!$Record.Onboarding_Status__c}))</filterFormula>
+        <object>CareProgram</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
